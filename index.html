@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#101419" />
+  <meta name="description" content="Turkey Estate — демо-каталог недвижимости в Стамбуле, Анталье и Бодруме: аренда и продажа квартир и вилл." />
+  <title>Turkey Estate — DEMO 8.0 · Чёткий тёмный стиль</title>
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+:root{--ink:#24262a;--muted:#777a80;--line:#eae9e6;--accent:#db765e;--accent-deep:#bf5942;--cream:#f9f6f1;--white:#fff;--radius:20px;--shadow:0 14px 45px rgba(34,35,40,.085)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--ink);font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased}button,input,select{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}img{display:block;width:100%;object-fit:cover}svg.icon{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}.icon.small{width:16px;height:16px}.sprite{position:absolute;height:0;width:0;overflow:hidden}.container{width:min(1240px,calc(100% - 76px));margin-inline:auto}.hidden{display:none!important}.site-header{height:92px;background:white;position:relative;z-index:11;border-bottom:1px solid #f0eeec}.header-inner{height:100%;display:flex;align-items:center;justify-content:space-between;gap:25px}.brand{display:inline-flex;align-items:center;gap:10px;font-size:17px;letter-spacing:.13em;font-family:Manrope,sans-serif;font-weight:800;line-height:1.05;white-space:nowrap}.brand-mark{display:grid;place-items:center;width:43px;height:43px;background:#243b37;color:#fff;border-radius:13px;letter-spacing:-.14em;font-size:25px;font-weight:700;padding-right:4px}.brand-mark span{color:#d38b71}.brand-small{display:block;letter-spacing:.32em;font-weight:600;font-size:9px;margin-top:4px}.nav{display:flex;align-items:center;gap:36px}.nav-link{font-weight:600;font-size:13px;color:#6e6f70;padding:36px 0;position:relative;transition:color .2s}.nav-link.active,.nav-link:hover{color:var(--ink)}.nav-link.active:after{content:"";position:absolute;left:0;right:0;bottom:24px;height:2px;background:var(--accent)}.header-actions{display:flex;align-items:center;gap:22px}.favorites-header{border:0;background:none;display:flex;align-items:center;gap:8px;font-weight:600;font-size:13px;color:#3c3d40}.fav-count{border-radius:20px;background:var(--accent);color:white;padding:2px 6px;font-size:10px}.contact-top{display:flex;align-items:center;gap:8px;border:1px solid #dedcda;padding:12px 17px;border-radius:30px;font-size:12px;font-weight:700;transition:background .2s}.contact-top:hover{background:var(--cream)}.menu-toggle{display:none;background:none;border:0}.hero{min-height:474px;display:grid;grid-template-columns:49% 51%;align-items:center;padding-block:30px 34px}.hero-content{padding:25px 32px 30px 0}.eyebrow,.section-kicker{display:inline-flex;align-items:center;gap:10px;color:#ae806b;letter-spacing:.2em;font-weight:800;font-size:10px}.eyebrow-line{width:24px;height:1px;background:#b77e69}.hero h1{font-family:Manrope,sans-serif;font-size:clamp(37px,3.7vw,57px);line-height:1.23;font-weight:700;letter-spacing:-.06em;margin:26px 0 17px}.hero h1 em{font-style:normal;color:#c77b62}.hero-subtitle{max-width:450px;line-height:1.85;font-size:15px;color:var(--muted)}.hero-trust{display:flex;align-items:center;gap:14px;margin-top:32px;font-size:12px;color:#85817c}.stars{letter-spacing:5px;color:#d5947e}.hero-image{height:408px;position:relative;border-radius:22px;background:#d7d2c9 url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1400&q=88') center/cover}.hero-image-badge{position:absolute;right:20px;bottom:20px;background:rgba(255,255,255,.94);border-radius:30px;padding:13px 18px;font-size:12px;font-weight:700;color:#485b54;box-shadow:0 4px 20px #0002}.search-shell{position:relative;margin-top:-8px;z-index:3}.search-panel{border:1px solid #eeebe8;background:white;border-radius:21px;box-shadow:var(--shadow);padding:20px 23px 21px}.deal-switch{display:flex;gap:26px;padding:0 7px 16px;border-bottom:1px solid var(--line)}.deal-btn{border:0;background:none;color:#929294;font-weight:700;font-size:13px;padding:3px 0;position:relative}.deal-btn.selected{color:var(--ink)}.deal-btn.selected:after{content:"";position:absolute;bottom:-17px;left:0;right:0;height:2px;background:var(--accent)}.search-form{display:flex;gap:0;align-items:stretch;padding-top:16px}.search-field{flex:1;display:flex;flex-direction:column;gap:7px;padding:6px 22px;border-right:1px solid var(--line);min-width:0}.city-field{padding-left:6px;flex:1.2}.search-field span{font-size:11px;font-weight:800;color:#3d3c3b}.search-field select,.search-field input{border:0;outline:0;background:transparent;color:#77797b;width:100%;font-size:13px;min-height:22px}.search-field:focus-within span{color:var(--accent-deep)}.search-submit{border:0;border-radius:14px;background:var(--accent);color:white;padding:0 26px;margin-left:18px;min-height:55px;display:flex;align-items:center;justify-content:center;gap:9px;font-weight:700;font-size:12px;white-space:nowrap;transition:background .2s,transform .2s}.search-submit:hover,.primary-button:hover{background:var(--accent-deep);transform:translateY(-1px)}.cities-section{padding-top:86px}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:26px}.section-heading h2{font-family:Manrope,sans-serif;font-size:clamp(25px,2.2vw,34px);letter-spacing:-.045em;line-height:1.3;margin:9px 0 0}.section-heading p{color:#92918f;font-size:13px;line-height:1.75;max-width:230px;margin:0 0 3px}.cities-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.city-card{padding:0;border:0;text-align:left;height:245px;position:relative;overflow:hidden;border-radius:18px;background:#ccc}.city-card:after{content:"";position:absolute;inset:20% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.65))}.city-card img{height:100%;transition:transform .4s}.city-card:hover img{transform:scale(1.05)}.city-overlay{position:absolute;z-index:1;left:25px;bottom:23px;color:white;display:flex;flex-direction:column;gap:6px}.city-overlay strong{font-family:Manrope,sans-serif;font-size:24px;letter-spacing:-.04em}.city-overlay span{font-size:12px;display:flex;align-items:center;gap:8px;color:#f8f8f8}.catalog-section{padding-top:93px;scroll-margin-top:30px}.catalog-heading{margin-bottom:23px}.listing-summary{display:flex;align-items:center;gap:24px;color:#7d7d7d;font-size:12px;white-space:nowrap}.text-button{border:0;background:none;padding:5px;color:var(--accent-deep);font-size:12px;font-weight:700}.catalog-toolbar{display:flex;justify-content:space-between;gap:15px;align-items:center;margin:0 0 20px}.city-chips{display:flex;gap:9px;flex-wrap:wrap}.chip{border:1px solid #e7e5e2;background:white;border-radius:30px;padding:11px 17px;color:#6e6c6a;font-size:12px;font-weight:700}.chip.active,.chip:hover{background:#263d38;border-color:#263d38;color:white}.sort-label{font-size:12px;color:#888;white-space:nowrap}.sort-label select{border:0;outline:0;margin-left:4px;font-weight:700;color:#333;background:white;max-width:155px}.demo-note{display:flex;align-items:center;gap:7px;margin-bottom:20px;color:#7d817d;font-size:11px}.properties-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:34px 20px}.property-card{min-width:0;cursor:pointer}.property-image-wrap{position:relative;overflow:hidden;aspect-ratio:1.18/1;border-radius:17px;background:#e9e8e5}.property-image-wrap img{height:100%;transition:transform .35s}.property-card:hover .property-image-wrap img{transform:scale(1.045)}.property-badge{position:absolute;left:12px;top:12px;background:white;border-radius:7px;padding:8px 10px;font-size:10px;font-weight:800;box-shadow:0 2px 12px #0002}.heart-btn{position:absolute;right:12px;top:11px;width:34px;height:34px;border:0;border-radius:50%;background:#ffffffeb;display:grid;place-items:center;color:#4c514f;z-index:1}.heart-btn .icon{width:19px;height:19px}.heart-btn.liked{color:#d96859}.heart-btn.liked .icon{fill:#d96859;stroke:#d96859}.card-body{padding:13px 1px 0}.card-location{display:flex;align-items:center;gap:4px;font-size:11px;color:#8b8a86;margin:0 0 7px}.card-location .icon{height:13px;width:13px}.card-title{font-size:14px;font-weight:800;line-height:1.45;margin:0 0 11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.card-features{display:flex;align-items:center;gap:12px;font-size:10px;color:#858481;margin-bottom:12px}.card-features span{display:flex;align-items:center;gap:4px;white-space:nowrap}.card-features .icon{width:14px;height:14px}.card-bottom{padding-top:11px;border-top:1px solid #f0efec;display:flex;justify-content:space-between;align-items:center;gap:8px}.card-price{font-size:17px;font-weight:800;letter-spacing:-.03em}.card-price small{font-size:10px;font-weight:500;color:#8a8a8a;letter-spacing:0}.card-link{color:var(--accent-deep);font-size:11px;font-weight:700;display:flex;align-items:center;gap:5px}.empty-state{text-align:center;border:1px dashed #e5e0dc;border-radius:20px;padding:55px 20px}.empty-symbol{font-size:70px;font-weight:300;color:#c2c4c1}.empty-state h3{font-family:Manrope,sans-serif;font-size:23px;margin:0 0 10px}.empty-state p{color:var(--muted);font-size:13px}.primary-button{border:0;border-radius:12px;background:var(--accent);color:white;padding:13px 19px;font-weight:700;margin-top:10px}.feature-section{display:grid;grid-template-columns:1fr 1fr;margin-top:112px;margin-bottom:100px;background:#f8f6f2;border-radius:20px;overflow:hidden;min-height:380px}.feature-photo{background:#dddbd5 url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1150&q=85') center/cover}.feature-copy{align-self:center;padding:50px 65px}.feature-copy h2{font:700 clamp(27px,2.6vw,39px)/1.3 Manrope,sans-serif;letter-spacing:-.055em;margin:15px 0}.feature-copy p{font-size:13px;color:#888883;line-height:2;max-width:430px}.feature-link{display:inline-flex;align-items:center;gap:10px;font-weight:800;color:var(--accent-deep);font-size:12px;margin-top:15px}.site-footer{border-top:1px solid #ecebea}.footer-content{padding:42px 0 36px;display:flex;align-items:start;justify-content:space-between}.footer-content p{font-size:12px;color:#989895;margin:18px 0 0}.footer-links{display:flex;gap:32px;padding-top:13px;font-size:12px;font-weight:700;color:#747473}.footer-bottom{border-top:1px solid #f0efed;display:flex;justify-content:space-between;gap:15px;padding:20px 0 25px;color:#999;font-size:11px}.modal{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:30px}.modal-backdrop{position:absolute;inset:0;background:rgba(20,24,24,.69);backdrop-filter:blur(3px)}.modal-panel{position:relative;z-index:1;background:#fff;border-radius:20px;width:min(850px,100%);max-height:90vh;overflow:auto;outline:0;box-shadow:0 30px 90px #0004}.modal-close{position:sticky;float:right;top:15px;margin:15px 15px -58px 0;z-index:2;border:0;border-radius:50%;height:37px;width:37px;background:#fff;display:grid;place-items:center;box-shadow:0 2px 12px #0002}.modal-photo{width:100%;height:360px;object-fit:cover}.modal-content{padding:26px 35px 35px}.modal-tag{font-size:11px;color:var(--accent-deep);font-weight:800}.modal-content h2{font:700 28px/1.3 Manrope,sans-serif;letter-spacing:-.04em;margin:12px 0}.modal-content p{line-height:1.8;color:#777;font-size:14px}.modal-facts{display:flex;flex-wrap:wrap;gap:15px;margin:20px 0;color:#666;font-size:12px}.modal-facts span{display:flex;align-items:center;gap:5px}.modal-footer{border-top:1px solid #ecebe9;padding-top:20px;display:flex;justify-content:space-between;align-items:center;gap:20px}.modal-price{font:800 25px Manrope,sans-serif}.modal-price small{font:500 12px 'DM Sans',sans-serif;color:#999}.modal-action{background:#263d38;color:white;padding:14px 18px;border-radius:10px;font-size:12px;font-weight:700}.modal-disclaimer{font-size:11px!important;color:#a1a19d!important}.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,20px);z-index:150;background:#263d38;color:white;border-radius:12px;padding:12px 17px;opacity:0;transition:all .25s;pointer-events:none;font-size:12px;box-shadow:0 8px 25px #0002}.toast.visible{opacity:1;transform:translate(-50%,0)}@media(max-width:1100px){.nav{gap:20px}.properties-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero h1{font-size:43px}.feature-copy{padding:35px}.search-field{padding-inline:14px}}@media(max-width:850px){.container{width:min(100% - 34px,1240px)}.site-header{height:70px}.nav{display:none;position:absolute;left:0;right:0;top:70px;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:8px 24px 18px;box-shadow:0 15px 22px #0001}.nav.open{display:flex}.nav-link{padding:12px 0}.nav-link.active:after{display:none}.menu-toggle{display:block}.contact-top{display:none}.hero{grid-template-columns:1fr;padding-block:24px}.hero-content{padding:20px 0 28px}.hero h1{font-size:42px;margin:17px 0}.hero-image{height:310px}.search-shell{margin-top:6px}.search-form{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.search-field{border:1px solid #ebe9e5;border-radius:10px;padding:9px 13px}.search-submit{grid-column:span 2;margin:0}.cities-section{padding-top:60px}.cities-grid{gap:12px}.city-card{height:210px}.city-overlay{left:16px;bottom:16px}.city-overlay strong{font-size:19px}.properties-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.catalog-section{padding-top:65px}.feature-section{margin-top:70px;margin-bottom:60px}.footer-content{gap:20px}}@media(max-width:570px){.brand{font-size:13px}.brand-mark{height:38px;width:38px;font-size:22px}.header-actions{gap:12px}.favorites-label{display:none}.hero h1{font-size:34px}.hero-subtitle{font-size:13px}.hero-image{height:245px}.section-heading{display:block}.section-heading h2{font-size:25px}.section-heading p{margin-top:12px}.cities-grid{grid-template-columns:1fr;gap:11px}.city-card{height:165px}.catalog-heading .listing-summary{margin-top:14px}.catalog-toolbar{display:block}.sort-label{display:block;margin:18px 0 0}.properties-grid{gap:25px 13px}.property-image-wrap{aspect-ratio:1/1.05}.card-title{font-size:12px}.card-features{gap:7px;flex-wrap:wrap}.card-price{font-size:14px}.card-link{font-size:10px}.feature-section{grid-template-columns:1fr}.feature-photo{height:230px}.feature-copy{padding:30px}.footer-content,.footer-bottom{flex-direction:column}.footer-links{flex-wrap:wrap;gap:15px}.modal{padding:10px}.modal-photo{height:230px}.modal-content{padding:20px}.modal-content h2{font-size:23px}.modal-footer{align-items:start;flex-direction:column}.search-panel{padding:16px}.deal-switch{gap:20px}.search-form{gap:9px}.search-field{min-width:0}.search-field select,.search-field input{font-size:12px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+
+
+/* Simplified buy/rent design, typography and useful rental filters */
+:root{--accent:#27766b;--accent-deep:#165b51;--cream:#f4f7f5;--ink:#182e2b;--radius:16px}
+body{font-family:'Inter',sans-serif}h1,h2,h3,.brand,.card-price,.modal-price{font-family:'Plus Jakarta Sans',sans-serif;letter-spacing:-.035em}
+.deal-switch{border-bottom:0;gap:8px;padding:0 0 13px}
+.deal-btn{border:1px solid #dce7e3;border-radius:12px;padding:12px 30px;font-weight:750;background:#fff}
+.deal-btn.selected{background:#165b51;color:#fff;border-color:#165b51}
+.deal-btn.selected:after{display:none}
+.search-panel{border:1px solid #e0e9e4;box-shadow:0 15px 48px rgba(15,67,56,.07)}
+.search-field{border-radius:12px}
+.budget-controls{display:flex;align-items:center;gap:6px;min-width:0}
+.budget-controls input{min-width:0;flex:1}
+.budget-controls select{width:88px!important;flex:0 0 88px;border-left:1px solid #dce8e2;padding-left:8px;font-weight:700;color:#165b51!important}
+.amenities-panel{padding:18px 8px 8px;border-top:1px solid #edf1ee;margin-top:18px}
+.amenities-heading{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:13px}
+.amenities-heading strong{font-family:'Plus Jakarta Sans',sans-serif;font-size:15px}
+.amenities-heading span,.rates-note{font-size:12px;color:#79837d}
+.amenity-options{display:flex;gap:9px;flex-wrap:wrap}
+.amenity-options label{display:inline-flex;align-items:center;gap:7px;border:1px solid #dfe9e3;padding:10px 13px;border-radius:11px;font-size:12px;font-weight:600;cursor:pointer;background:#fff;transition:.2s}
+.amenity-options label:has(input:checked){background:#e3f2ec;border-color:#2c806f;color:#165b51}
+.amenity-options input{accent-color:#165b51;cursor:pointer}
+.rates-note{margin:13px 6px 0;line-height:1.55}
+.rental-perks{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0}
+.rental-perks span{font-size:10px;border-radius:7px;background:#f0f7f3;padding:5px 7px;color:#36645a}
+.modal-amenities{margin:16px 0}.modal-amenities strong{display:block;margin-bottom:12px}.modal-amenities>div{display:flex;gap:9px;flex-wrap:wrap}.modal-amenities span{background:#f0f7f3;border-radius:8px;padding:8px 10px;font-size:12px;color:#195b4d}
+@media(max-width:700px){.deal-switch{gap:8px}.deal-btn{flex:1;text-align:center;padding:12px 18px}.budget-controls select{flex-basis:87px}.amenities-panel{padding:15px 0 0}.amenity-options label{font-size:11px}}
+.lang-wrap{display:inline-flex;align-items:center;gap:6px;border:1px solid #dce7e3;border-radius:12px;padding:9px 10px;white-space:nowrap;background:#fff;color:#165b51}.lang-wrap select{border:0;background:transparent;font-size:12px;font-weight:700;color:inherit;max-width:95px;outline:none;cursor:pointer}.lang-globe{font-size:20px;line-height:1}@media(max-width:570px){.lang-wrap{padding:7px 5px}.lang-wrap select{max-width:68px;font-size:11px}.lang-globe{display:none}}
+
+/* Turkey Estate v4 — dark graphite and silver theme */
+:root{--ink:#e0e5ed;--muted:#a2acb9;--line:#343c46;--accent:#a7b4c5;--accent-deep:#dce5ef;--cream:#1a2028;--white:#1b222b;--shadow:0 18px 60px rgba(0,0,0,.32)}
+html{color-scheme:dark}
+body{background:radial-gradient(ellipse at 50% -15%,#26313e 0,#11161c 42%,#101419 90%);color:var(--ink)}
+.site-header{background:#141a21;border-bottom:1px solid #303944;box-shadow:0 5px 28px #05080c44}
+.brand{color:#e7edf4}.brand-mark{background:linear-gradient(145deg,#424f60,#1b222c);color:#f5f7fa;border:1px solid #657487}.brand-mark span{color:#c4cfdb}
+.nav-link{color:#abb5c1}.nav-link.active,.nav-link:hover{color:#f0f3f7}
+.favorites-header{color:#d6dee8}.fav-count{background:#5b6e85;color:#fff}
+.contact-top{border-color:#596472;background:#252d38;color:#edf2f8}.contact-top:hover{background:#374252}
+.menu-toggle{color:#dfe6ed}
+.hero h1{color:#f1f4f8}.hero h1 em{color:#bdcbdc}
+.eyebrow,.section-kicker{color:#bac7d6}.eyebrow-line{background:#aebdcd}
+.hero-subtitle,.hero-trust,.section-heading p{color:#aab5c2}.stars{color:#d1dbe7}
+.hero-image{box-shadow:0 25px 65px #05070b80;border:1px solid #3a4652}
+.hero-image-badge{background:#1d2630ee;color:#e1e8f0;border:1px solid #657181;box-shadow:0 7px 28px #0008}
+.search-panel{background:#1d252e;border-color:#3b4552;box-shadow:0 16px 45px #0006}
+.deal-btn{color:#95a3b1}.deal-btn.selected{color:#f1f5f9}
+.search-field span{color:#d4dce7}.search-field select,.search-field input{color:#e1e7ee}
+.search-field select:focus,.search-field input:focus{outline:0}
+.search-field select option,.sort-label select option,.budget-controls select option,.lang-wrap select option{background:#202834;color:#e7edf5}
+.search-field input::placeholder{color:#8794a4;opacity:1}
+.search-submit,.primary-button{background:linear-gradient(135deg,#aebccb,#77889c);color:#101820;box-shadow:0 7px 19px #0004}
+.search-submit:hover,.primary-button:hover{background:linear-gradient(135deg,#d5dfe9,#9caebf)}
+.section-heading h2,.card-title,.empty-state h3,.feature-copy h2{color:#e4eaf2}
+.city-card{border:1px solid #45515f}.city-card:after{background:linear-gradient(transparent,#09101bc7)}
+.listing-summary,.sort-label,.demo-note,.card-location,.card-features{color:#9fabb9}
+.chip{background:#1d252e;border-color:#465362;color:#bcc7d3}.chip.active,.chip:hover{background:#687a90;border-color:#96a6b8;color:#fff}
+.sort-label select{background:#1b232c;color:#e0e8f0;border:1px solid #475461;border-radius:7px;padding:7px}
+.property-image-wrap{background:#28313c;border:1px solid #3b4652}
+.property-badge{background:#222b35;color:#dce4ed;border:1px solid #596678;box-shadow:0 3px 14px #0005}
+.heart-btn{background:#212a34ec;color:#d5dfe9}.heart-btn.liked,.heart-btn.liked .icon{color:#e7b3ba;fill:#d57e8e;stroke:#d57e8e}
+.card-bottom{border-color:#343d49}.card-price,.modal-price{color:#edf2f8}.card-price small,.modal-price small{color:#a3b1bf}.card-link,.text-button,.feature-link{color:#cad8e8}
+.empty-state{border-color:#596475;background:#18202a}.empty-symbol{color:#718194}.empty-state p{color:#9baabb}
+.feature-section{background:#1e2630;border:1px solid #3e4958}.feature-copy p{color:#a5b1bf}
+.site-footer{border-color:#3d4652}.footer-content p,.footer-links,.footer-bottom{color:#a7b3c1}.footer-bottom{border-color:#343d49}
+.modal-backdrop{background:#080c12d9}.modal-panel{background:#1c252f;border:1px solid #5b6777;color:#dfe7ef;box-shadow:0 30px 90px #000b}
+.modal-close{background:#384554;color:#f2f6fa;border:1px solid #6a7b90}
+.modal-content p,.modal-facts{color:#aebbc9}.modal-footer{border-color:#3d4855}
+.modal-action,.toast{background:#6f849b;color:#f4f7fa}.modal-tag{color:#d7e2ef}.modal-disclaimer{color:#9faebb!important}
+.amenities-panel{border-color:#3b4653}.amenities-heading span,.rates-note{color:#a1afbd}
+.amenity-options label{background:#202a35;color:#d4deea;border-color:#435264}
+.amenity-options label:has(input:checked){background:#36495c;color:#f0f5fa;border-color:#8eabc8}
+.amenity-options input{accent-color:#a8bacf}
+.rental-perks span,.modal-amenities span{background:#2a3848;color:#d8e4f1}
+.budget-controls select{border-color:#556577;color:#dbe5ef!important}
+.lang-wrap{background:#232d39;border-color:#536172;color:#e1e8f0}.lang-wrap:focus-within{outline:2px solid #98acc4;outline-offset:2px}
+:focus-visible{outline:2px solid #c1d4e8;outline-offset:3px}
+::selection{background:#8196b0;color:#081019}
+@media(max-width:850px){.nav{background:#1b242e;border:1px solid #3e4d5c}.nav-link{color:#d0dbe7}}
+
+/* V5 — near-black platinum editorial identity */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
+:root{--ink:#b9bec8;--muted:#818894;--line:#262930;--accent:#9da5b2;--accent-deep:#c6cbd5;--cream:#101115;--white:#14161b;--shadow:0 16px 60px #0009}
+html{color-scheme:dark}body{background:radial-gradient(ellipse at 50% -5%,#1b1d23 0,#0b0c10 40%,#08090c 96%);color:var(--ink);font-family:'Manrope',sans-serif}
+.site-header{background:#0b0c10;border-color:#26282e}.brand{font-family:'Manrope',sans-serif;color:#c5cad1;font-weight:600;letter-spacing:.18em}.brand-mark{background:#17191f;border-color:#414750;color:#c4c8cf}.brand-mark span{color:#828b99}.nav-link,.favorites-header{color:#959ca7}.nav-link.active,.nav-link:hover{color:#d0d4dc}
+.hero h1,.section-heading h2,.feature-copy h2,.empty-state h3,.modal-content h2{font-family:'Cormorant Garamond',Georgia,serif!important;font-size:clamp(37px,4.7vw,68px);font-weight:500!important;letter-spacing:-.018em!important;line-height:1.08;color:#c4c9d1!important}
+.section-heading h2{font-size:clamp(34px,3.3vw,46px)}.feature-copy h2{font-size:clamp(36px,3.2vw,48px)}.modal-content h2{font-size:39px}.hero h1 em{color:#949ba7}.hero-subtitle,.hero-trust,.section-heading p{color:#858b96}
+.search-panel,.feature-section{background:#121419;border-color:#292d35}.search-field span{color:#a6adba}.search-field input,.search-field select{color:#bdc3cc}.search-field input::placeholder{color:#6f7782}
+.deal-btn{color:#838a95}.deal-btn.selected{color:#d4d8df}.search-submit,.primary-button{background:linear-gradient(135deg,#9ba3af,#6f7783);color:#101217;box-shadow:none}.search-submit:hover,.primary-button:hover{background:linear-gradient(135deg,#b7bec9,#858e9a)}
+.section-kicker,.eyebrow{color:#9b9faa}.card-title{color:#c7cbd3;font-family:'Cormorant Garamond',Georgia,serif;font-size:23px;font-weight:600}.card-price{font-family:'Manrope',sans-serif;color:#c3c8d2}.card-location,.card-features,.listing-summary,.demo-note,.sort-label{color:#8a909a}.chip{background:#121419;border-color:#30343c;color:#9ba3ae}.chip.active,.chip:hover{background:#343941;border-color:#626a76}.property-image-wrap{background:#171a20;border-color:#30343c}.property-badge,.heart-btn{background:#191c23e8;color:#c1c7d0;border-color:#454b55}.card-bottom{border-color:#292c34}.feature-copy p,.footer-content p,.footer-links,.footer-bottom{color:#8d929d}.site-footer{border-color:#292d34}
+.modal-panel{background:#12151b;border-color:#373d46}.modal-content p,.modal-facts{color:#a0a6b0}.modal-close{background:#252a32;color:#ccd0d8}.modal-action,.toast{background:#6f7784;color:#f7f8fa}.lang-wrap{background:#15181e;border-color:#343a44;color:#bdc4cf}.contact-top{background:#1a1d24;border-color:#383e47;color:#c0c6cf}
+.amenity-options label{background:#191b22;border-color:#333943;color:#b3b9c3}.amenity-options label:has(input:checked){background:#2a3039;border-color:#7b8592;color:#d0d5dd}.rental-perks span,.modal-amenities span{background:#252a33;color:#adb8c7}.budget-controls select{border-color:#363d48}
+.post-btn{background:linear-gradient(135deg,#969da9,#6f7784);color:#0d0f13;border:0;padding:12px 18px;border-radius:26px;font-size:12px;font-weight:800;white-space:nowrap;transition:filter .2s}.post-btn:hover{filter:brightness(1.13)}
+.post-modal{position:fixed;inset:0;display:grid;place-items:center;z-index:120;padding:20px}.post-shade{position:absolute;inset:0;background:#030407e9}.post-panel{position:relative;width:min(720px,100%);max-height:90vh;overflow:auto;border:1px solid #444b58;background:#111319;border-radius:20px;padding:27px;box-shadow:0 30px 90px #000b;outline:0}.post-heading{display:flex;justify-content:space-between;align-items:start;gap:10px;margin-bottom:18px}.post-heading h2{font:500 44px/1.05 'Cormorant Garamond',Georgia,serif;color:#c9cdd6;margin:6px 0}.post-subtitle{font-size:12px;color:#8e96a2}.post-close{border:1px solid #444b55;background:#22262e;color:#bec5d0;width:36px;height:36px;border-radius:50%;font-size:23px}.post-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.post-field{display:flex;flex-direction:column;gap:7px;min-width:0;font-size:12px;color:#aeb6c2;font-weight:600}.post-field.full{grid-column:1/-1}.post-field input,.post-field select,.post-field textarea{background:#1a1d24;border:1px solid #3c434d;color:#d1d6df;padding:12px;border-radius:10px;min-width:0;outline:none;font:inherit}.post-field input:focus,.post-field select:focus,.post-field textarea:focus{border-color:#929daa}.post-field textarea{resize:vertical;min-height:86px}.post-checks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.post-checks label{display:flex;align-items:center;gap:6px;font-size:11px;color:#b0b7c2}.post-checks input{accent-color:#a4afbf}.post-note{font-size:11px;color:#8c96a4;line-height:1.6}.post-save{border:none;border-radius:12px;background:#929da9;color:#0a0c10;padding:14px 22px;font-weight:800;width:100%}.post-save:hover{background:#bdc6d1}.post-photo-preview{max-height:180px;width:auto;max-width:100%;border-radius:10px;margin-top:6px}.post-my{font-size:12px;border:1px solid #434c58;padding:11px 15px;background:#191c23;color:#b8c0ca;border-radius:24px;cursor:pointer}.local-pill{font-size:10px;color:#c9d4df;border:1px solid #546171;border-radius:8px;padding:5px 8px}
+@media(max-width:1100px){.header-actions{gap:9px}.post-btn{padding:10px 12px}}@media(max-width:850px){.nav{background:#111319}.post-btn{font-size:11px;padding:10px 12px}}@media(max-width:570px){.post-panel{padding:17px}.post-grid{grid-template-columns:1fr}.post-checks{grid-template-columns:1fr 1fr}.post-heading h2{font-size:37px}.post-btn{padding:10px;font-size:10px}.header-actions{gap:7px}.contact-top{display:none}}
+
+</style>
+
+<style id="district-v6-style">
+@media(min-width:851px){.search-form{flex-wrap:wrap;row-gap:14px}.search-form .search-field{flex:1 1 15%;padding-inline:12px}.search-form .district-field{flex:1.1 1 18%}.search-form .budget-field{flex:1.3 1 20%}.search-form .search-submit{flex:0 0 155px;margin-left:8px}}
+@media(max-width:850px){.search-form .district-field{min-width:0}}
+.search-field select:disabled{color:#68717e;cursor:not-allowed}.post-field select:disabled{opacity:.65;cursor:not-allowed}
+</style>
+<style id="full-area-style">.neighborhood-post input{margin-top:6px}.neighborhood-field.hidden,.neighborhood-post.hidden{display:none!important}.neighborhood-field select:disabled{opacity:.65}</style>
+
+<style id="clarity-v8">
+/* Increased legibility and clearer form hierarchy without changing the midnight/silver identity. */
+:root{--ink:#e2e6eb;--muted:#b0b9c5;--line:#414956;--accent:#c0c8d3;--accent-deep:#edf1f5}
+body{color:#dce1e8;font-size:15px;line-height:1.55}
+.site-header{border-bottom:1px solid #414852;background:#0b0d12}
+.brand,.nav-link.active,.nav-link:hover{color:#f0f3f6}
+.nav-link{color:#bcc4cf;font-size:14px}
+.hero h1,.section-heading h2,.feature-copy h2,.empty-state h3,.modal-content h2{color:#edf0f4!important;font-weight:600!important}
+.hero h1{font-size:clamp(45px,5vw,73px)!important}
+.hero-subtitle,.hero-trust,.section-heading p,.post-subtitle{color:#b9c2ce;font-size:15px;line-height:1.7}
+.search-panel{background:#151920;border:1px solid #4b5360;box-shadow:0 14px 55px #0009}
+.deal-switch{border-color:#4a5260}
+.deal-btn{font-size:16px;color:#b6bec9;padding:7px 2px}
+.deal-btn.selected{color:#f2f4f7}
+.search-field span{font-size:13px;font-weight:700;color:#e1e5eb;letter-spacing:0}
+.search-field input,.search-field select{font-size:14px;color:#f0f2f6;min-height:30px;cursor:pointer}
+.search-field input::placeholder{color:#b0b8c4;opacity:1}
+.search-field{border-color:#505866}
+.search-field select:disabled{color:#9fa9b7;opacity:1}
+.search-submit,.post-btn,.primary-button,.post-save{background:#c6ced9;color:#11161c;border:1px solid #edf1f6;font-weight:800}
+.search-submit:hover,.post-btn:hover,.post-save:hover{background:#edf1f6;color:#080c11}
+.search-submit{font-size:14px}
+.amenities-heading strong{color:#eef0f4;font-size:15px}
+.amenities-heading span,.rates-note,.demo-note{color:#adb7c4;font-size:12px;line-height:1.6}
+.amenity-options label{color:#dce1e7;background:#20252e;border-color:#454d59;font-size:13px}
+.amenity-options label:has(input:checked){background:#374352;color:#fff;border-color:#aab7c6}
+.amenity-options input{accent-color:#bdc9d7}
+.city-chips .chip,.chip{color:#d9e0e7;background:#191e25;border-color:#525a66;font-size:13px}
+.chip.active,.chip:hover{background:#4d5a69;border-color:#b2bdcc;color:#fff}
+.section-kicker,.eyebrow{color:#c8d1dd}
+.card-title{color:#e8edf3;font-size:25px;line-height:1.28}
+.card-location,.card-features,.listing-summary,.sort-label{color:#c1c9d4;font-size:12px}
+.card-price{color:#f2f4f7;font-size:19px}
+.property-badge{color:#f3f5f7;background:#262d38}
+.card-bottom{border-color:#434b57}
+.post-panel{background:#151a22;border-color:#616b79}
+.post-heading h2{color:#f0f3f7;font-weight:600}
+.post-field{color:#e2e8f0;font-size:14px}
+.post-field input,.post-field select,.post-field textarea{background:#222a35;border:1px solid #657183;color:#f4f6f9;font-size:14px;min-height:44px}
+.post-field input::placeholder,.post-field textarea::placeholder{color:#b2bdcb;opacity:1}
+.post-field input:focus,.post-field select:focus,.post-field textarea:focus,.search-field:focus-within{outline:2px solid #aebfce;outline-offset:2px}
+.post-checks label,.post-note{color:#c5cfdb;font-size:13px}
+.lang-wrap{border:1px solid #657183;background:#242b35;color:#f0f3f7}
+.lang-wrap select{color:#f0f3f7}
+.budget-controls select,.sort-label select{color:#e7ecf3;background:#242b35}
+select option{background:#202732;color:#f2f5f9}
+.neighborhood-field,.district-field{background:rgba(157,180,206,.065);border-radius:9px}
+.search-field:focus-within span{color:#f5f8fa}
+.post-close{color:#e7edf5}
+button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid #d1dce8;outline-offset:3px}
+@media(max-width:850px){.search-field{border-bottom:1px solid #45505c}.nav{background:#151920;border-color:#48515e}}
+@media(max-width:570px){.hero h1{font-size:46px!important}.post-heading h2{font-size:39px}}
+</style>
+</head>
+<body>
+  <svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.9a5.5 5.5 0 0 0-7.8 0L12 5.9l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.3a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3"/><circle cx="16" cy="17" r="3"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-bed" viewBox="0 0 24 24"><path d="M3 20V5m0 12h18v3m-18-8h18v5H3m2-5V8h6v4"/></symbol>
+    <symbol id="i-bath" viewBox="0 0 24 24"><path d="M3 13h18v2a7 7 0 0 1-7 7h-4a7 7 0 0 1-7-7v-2Zm2 0V5a3 3 0 0 1 6 0v1"/></symbol>
+    <symbol id="i-area" viewBox="0 0 24 24"><path d="M4 10V4h6M20 14v6h-6M4 4l6 6m10 10-6-6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5 19 19M19 5 5 19"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="brand" href="#home" aria-label="Turkey Estate — главная"><span class="brand-mark">T<span>·</span></span><span>TURKEY<span class="brand-small">ESTATE</span></span></a>
+      <nav class="nav" id="site-nav" aria-label="Главное меню">
+        <a href="#catalog" data-nav="rent" class="nav-link active">Аренда</a>
+        <a href="#catalog" data-nav="sale" class="nav-link">Покупка</a>
+        <a href="#about" class="nav-link">О проекте</a>
+      </nav>
+      <div class="header-actions"><label class="lang-wrap" aria-label="Выбор языка"><span class="lang-globe">◎</span><select id="language-select" aria-label="Выберите язык"><option value="ru">Русский</option><option value="en">English</option><option value="tr">Türkçe</option></select></label>
+        <button id="post-open" class="post-btn" type="button">+ Разместить</button>
+        <button class="favorites-header" id="favorites-header" type="button" aria-label="Показать избранное"><svg class="icon"><use href="#i-heart"/></svg><span class="favorites-label">Избранное</span><span id="fav-count" class="fav-count hidden">0</span></button>
+        <a class="contact-top" href="mailto:hello@example.com?subject=Turkey%20Estate">Связаться <svg class="icon small"><use href="#i-arrow"/></svg></a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-nav"><svg class="icon"><use href="#i-menu"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="eyebrow-line"></span> ВАШ НОВЫЙ АДРЕС В ТУРЦИИ</div>
+        <h1 id="hero-title">Аренда или покупка.<br><em>Всё просто.</em></h1>
+        <p class="hero-subtitle">Выберите город, бюджет и необходимые удобства — найдём подходящие варианты в Стамбуле, Анталье и Бодруме.</p>
+        <div class="hero-trust"><span class="stars">✦ ✦ ✦</span><span>Подбор жилья для вашей истории</span></div>
+      </div>
+      <div class="hero-image" role="img" aria-label="Светлая вилла с бассейном"><span class="hero-image-badge">Жить красиво — просто.</span></div>
+    </section>
+
+    <section class="search-shell container" aria-label="Поиск недвижимости">
+      <div class="search-panel">
+        <div class="deal-switch" role="group" aria-label="Тип сделки">
+          <button class="deal-btn selected" type="button" data-deal="rent">Аренда</button>
+          <button class="deal-btn" type="button" data-deal="sale">Покупка</button>
+        </div>
+        <form id="search-form" class="search-form">
+          <label class="search-field city-field"><span>Где ищем?</span><select id="city-select" name="city"><option value="all">Все города</option><option value="Istanbul">Стамбул</option><option value="Antalya">Анталья</option><option value="Bodrum">Бодрум</option></select></label>
+          <label class="search-field district-field"><span id="district-search-label">Район / квартал</span><select id="district-select" name="district" disabled><option value="all">Все районы</option></select></label>
+          <label class="search-field neighborhood-field"><span id="neighborhood-search-label">Квартал (mahalle)</span><select id="neighborhood-select" disabled><option value="all">Выберите район</option></select></label>
+          <label class="search-field"><span>Тип жилья</span><select id="type-select" name="type"><option value="all">Любой тип</option><option value="Квартира">Квартира</option><option value="Вилла">Вилла</option><option value="Пентхаус">Пентхаус</option></select></label>
+          <label class="search-field budget-field"><span>Бюджет до</span><div class="budget-controls"><input id="max-price" name="maxPrice" type="number" min="0" step="100" placeholder="Любой" /><select id="currency-select" aria-label="Валюта бюджета"><option value="EUR">€ EUR</option><option value="USD">$ USD</option><option value="TRY">₺ TRY</option></select></div></label>
+          <label class="search-field rooms-field"><span>Спальни</span><select id="rooms-select" name="bedrooms"><option value="all">Любое число</option><option value="1">От 1</option><option value="2">От 2</option><option value="3">От 3</option><option value="4">От 4</option></select></label>
+          <button class="search-submit" type="submit"><svg class="icon"><use href="#i-search"/></svg><span>Найти жильё</span></button>
+        </form>
+        <div class="amenities-panel" id="amenities-panel">
+          <div class="amenities-heading"><strong>Удобства для аренды</strong><span>Отметьте, что важно для вас</span></div>
+          <div class="amenity-options" id="amenity-options">
+            <label><input type="checkbox" value="wifi"> Wi-Fi</label>
+            <label><input type="checkbox" value="aircon"> Кондиционер</label>
+            <label><input type="checkbox" value="furnished"> С мебелью</label>
+            <label><input type="checkbox" value="washer"> Стиральная машина</label>
+            <label><input type="checkbox" value="parking"> Парковка</label>
+            <label><input type="checkbox" value="pets"> Можно с животными</label>
+            <label><input type="checkbox" value="balcony"> Балкон / терраса</label>
+            <label><input type="checkbox" value="pool"> Бассейн</label>
+          </div>
+        </div>
+        <p class="rates-note" id="rates-note">Валюта и цены демонстрационные. Для переключения валют используются условные курсы: 1 € = 1,10 $ = 50 ₺. Это не актуальные рыночные курсы.</p>
+      </div>
+    </section>
+
+    <section class="cities-section container" aria-labelledby="cities-title">
+      <div class="section-heading"><div><span class="section-kicker">ОТКРОЙТЕ ДЛЯ СЕБЯ</span><h2 id="cities-title">Три города — ваш выбор.</h2></div><p>Выберите направление — мы покажем подходящие варианты.</p></div>
+      <div class="cities-grid">
+        <button class="city-card" type="button" data-city="Istanbul"><img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=950&q=85" alt="Стамбул и Босфор" loading="lazy"/><span class="city-overlay"><strong>Стамбул</strong><span>Город двух континентов <svg class="icon small"><use href="#i-arrow"/></svg></span></span></button>
+        <button class="city-card" type="button" data-city="Antalya"><img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=950&q=85" alt="Побережье Средиземного моря" loading="lazy"/><span class="city-overlay"><strong>Анталья</strong><span>Солнце круглый год <svg class="icon small"><use href="#i-arrow"/></svg></span></span></button>
+        <button class="city-card" type="button" data-city="Bodrum"><img src="https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=950&q=85" alt="Белоснежные дома у моря" loading="lazy"/><span class="city-overlay"><strong>Бодрум</strong><span>Эгейская сказка <svg class="icon small"><use href="#i-arrow"/></svg></span></span></button>
+      </div>
+    </section>
+
+    <section class="catalog-section container" id="catalog" aria-labelledby="catalog-title">
+      <div class="section-heading catalog-heading"><div><span class="section-kicker">ПОДБОРКА ДЛЯ ВАС</span><h2 id="catalog-title">Подходящие объявления</h2></div><div class="listing-summary"><span id="result-count">12 объектов</span><button id="reset-btn" type="button" class="text-button">Сбросить фильтры</button></div></div>
+      <div class="catalog-toolbar"><div class="city-chips" role="group" aria-label="Фильтр по городу"><button class="chip active" type="button" data-chip="all">Все направления</button><button class="chip" type="button" data-chip="Istanbul">Стамбул</button><button class="chip" type="button" data-chip="Antalya">Анталья</button><button class="chip" type="button" data-chip="Bodrum">Бодрум</button></div><label class="sort-label">Сортировка <select id="sort-select"><option value="featured">Рекомендуемые</option><option value="price-asc">Сначала дешевле</option><option value="price-desc">Сначала дороже</option><option value="area-desc">Большая площадь</option></select></label></div>
+      <div class="demo-note"><svg class="icon small"><use href="#i-check"/></svg> Демонстрационный каталог: все объекты и цены вымышлены и приведены для примера.</div>
+      <div class="properties-grid" id="properties-grid" aria-live="polite"></div>
+      <div class="empty-state hidden" id="empty-state"><span class="empty-symbol">⌕</span><h3>Таких объектов пока нет</h3><p>Попробуйте изменить город, бюджет или количество спален.</p><button type="button" id="empty-reset" class="primary-button">Показать все объекты</button></div>
+    </section>
+
+    <section class="feature-section container" id="about"><div class="feature-photo" role="img" aria-label="Уютная квартира с видом на море"></div><div class="feature-copy"><span class="section-kicker">TURKEY ESTATE</span><h2>Дом — это больше,<br>чем просто адрес.</h2><p>Мы создаём пространство, где искать недвижимость удобно и приятно. Узнавайте новые районы, сохраняйте любимые варианты и находите жильё в своём ритме.</p><a class="feature-link" href="#catalog">Смотреть объекты <svg class="icon small"><use href="#i-arrow"/></svg></a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-content"><div><a class="brand footer-brand" href="#home"><span class="brand-mark">T<span>·</span></span><span>TURKEY<span class="brand-small">ESTATE</span></span></a><p>Недвижимость в Турции — красиво и просто.</p></div><div class="footer-links"><a href="#catalog">Объекты</a><a href="#about">О проекте</a><a href="mailto:hello@example.com">Контакты</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> Turkey Estate. Демо-проект.</span><span>Не является публичной офертой · Контакты и объекты — примеры.</span></div></footer>
+
+  <div class="modal hidden" id="property-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-backdrop" data-close-modal="true"></div><div class="modal-panel" tabindex="-1"><button class="modal-close" type="button" id="modal-close" aria-label="Закрыть"><svg class="icon"><use href="#i-close"/></svg></button><div id="modal-body"></div></div></div>
+
+<div id="post-modal" class="post-modal hidden" role="dialog" aria-modal="true" aria-labelledby="post-title">
+  <div class="post-shade" data-close-post="true"></div>
+  <section class="post-panel" tabindex="-1">
+    <div class="post-heading"><div><span class="section-kicker" id="post-kicker">TURKEY ESTATE · ОБЪЯВЛЕНИЕ</span><h2 id="post-title">Разместить объявление</h2><p class="post-subtitle" id="post-subtitle">Заполните данные об объекте — он появится в вашем демо-каталоге.</p></div><button type="button" id="post-close" class="post-close" aria-label="Закрыть">×</button></div>
+    <form id="post-form" class="post-grid">
+      <label class="post-field"><span data-post-label="deal">Тип сделки</span><select name="deal" required><option value="rent">Аренда</option><option value="sale">Продажа</option></select></label>
+      <label class="post-field"><span data-post-label="city">Город</span><select name="city" required><option value="Istanbul">Стамбул</option><option value="Antalya">Анталья</option><option value="Bodrum">Бодрум</option></select></label>
+      <label class="post-field"><span data-post-label="type">Тип недвижимости</span><select name="type" required><option value="Квартира">Квартира</option><option value="Вилла">Вилла</option><option value="Пентхаус">Пентхаус</option></select></label>
+      <label class="post-field"><span data-post-label="district">Район / квартал</span><select name="district" required></select></label>
+      <label class="post-field neighborhood-post"><span id="post-neighborhood-label">Квартал (mahalle)</span><select name="neighborhood" disabled><option value="">Выберите район</option></select><input name="neighborhoodOther" placeholder="Укажите квартал вручную, если список недоступен" class="hidden" maxlength="90"></label>
+      <label class="post-field full"><span data-post-label="title">Заголовок</span><input name="title" maxlength="90" required placeholder="Светлая квартира у моря"></label>
+      <label class="post-field"><span data-post-label="price">Цена</span><input name="price" type="number" min="1" max="1000000000" required placeholder="1500"></label>
+      <label class="post-field"><span data-post-label="currency">Валюта</span><select name="currency"><option value="EUR">€ EUR</option><option value="USD">$ USD</option><option value="TRY">₺ TRY</option></select></label>
+      <label class="post-field"><span data-post-label="beds">Спальни</span><input name="bedrooms" type="number" min="0" max="30" value="2" required></label>
+      <label class="post-field"><span data-post-label="baths">Ванные</span><input name="bathrooms" type="number" min="0" max="30" value="1" required></label>
+      <label class="post-field"><span data-post-label="area">Площадь, м²</span><input name="area" type="number" min="1" max="100000" value="80" required></label>
+      <label class="post-field"><span data-post-label="photo">Фотография (до 8 МБ)</span><input id="post-photo" name="photo" type="file" accept="image/jpeg,image/png,image/webp"/><img id="post-preview" class="post-photo-preview hidden" alt=""></label>
+      <label class="post-field full"><span data-post-label="description">Описание</span><textarea name="description" maxlength="1500" required placeholder="Расскажите об объекте"></textarea></label>
+      <div class="post-field full"><span id="post-amenities-heading">Удобства для аренды</span><div id="post-amenities" class="post-checks"></div></div>
+      <p class="post-field full post-note" id="post-notice">Демо: ваши объявления сохраняются только в этом браузере, не публикуются для других и могут исчезнуть при очистке данных. Для настоящей публикации нужен сервер и личный кабинет.</p>
+      <div class="post-field full"><button class="post-save" type="submit" id="post-submit">Добавить в мой каталог</button></div>
+    </form>
+  </section>
+</div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script>
+/* Turkey Estate: static demonstrator. All properties and prices are fictional. */
+const photos = {
+  a:'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=950&q=82',
+  b:'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=950&q=82',
+  c:'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=950&q=82',
+  d:'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=950&q=82',
+  e:'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=950&q=82',
+  f:'https://images.unsplash.com/photo-1600607688969-a5bfcd646154?w=950&q=82',
+  g:'https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=950&q=82',
+  h:'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=950&q=82',
+  i:'https://images.unsplash.com/photo-1600585152915-d208bec867a1?w=950&q=82',
+  j:'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=950&q=82',
+  k:'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=950&q=82',
+  l:'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=950&q=82'
+};
+const properties = [
+  {id:1,city:'Istanbul',district:'Бешикташ',title:'Светлая квартира с видом на Босфор',type:'Квартира',deal:'sale',price:325000,bedrooms:2,bathrooms:2,area:110,img:photos.a,description:'Современная квартира с просторной гостиной и большими окнами. Удобное расположение рядом с прогулочными маршрутами и городскими кафе.'},
+  {id:2,city:'Antalya',district:'Коньяалты',title:'Апартаменты в пешей доступности от моря',type:'Квартира',deal:'rent',price:1250,bedrooms:2,bathrooms:1,area:88,img:photos.b,description:'Уютные апартаменты со светлой отделкой и открытой планировкой. Подходят для длительного проживания.'},
+  {id:3,city:'Bodrum',district:'Ялыкавак',title:'Современная вилла с приватным бассейном',type:'Вилла',deal:'sale',price:890000,bedrooms:4,bathrooms:3,area:240,img:photos.d,description:'Просторная вилла с террасой, несколькими спальнями и зоной для отдыха на открытом воздухе.'},
+  {id:4,city:'Istanbul',district:'Кадыкёй',title:'Дизайнерская квартира в центре района',type:'Квартира',deal:'rent',price:1700,bedrooms:1,bathrooms:1,area:74,img:photos.c,description:'Стильная квартира с акцентами из натуральных материалов. Рядом магазины, рестораны и общественный транспорт.'},
+  {id:5,city:'Antalya',district:'Лара',title:'Пентхаус с террасой и панорамными окнами',type:'Пентхаус',deal:'sale',price:410000,bedrooms:3,bathrooms:2,area:167,img:photos.f,description:'Пентхаус с просторной террасой, высоким уровнем естественного освещения и удобной планировкой.'},
+  {id:6,city:'Bodrum',district:'Гюмюшлюк',title:'Тихая вилла для отдыха у Эгейского моря',type:'Вилла',deal:'rent',price:3900,bedrooms:3,bathrooms:2,area:185,img:photos.e,description:'Место для спокойного отдыха: отдельная гостиная, открытая терраса и достаточно пространства для семьи.'},
+  {id:7,city:'Istanbul',district:'Нишанташи',title:'Премиальная квартира с высокими потолками',type:'Квартира',deal:'sale',price:520000,bedrooms:3,bathrooms:2,area:145,img:photos.g,description:'Городские апартаменты с выразительным интерьером и просторной обеденной зоной.'},
+  {id:8,city:'Antalya',district:'Алтынташ',title:'Новая квартира в современном комплексе',type:'Квартира',deal:'rent',price:950,bedrooms:1,bathrooms:1,area:63,img:photos.h,description:'Компактная квартира для комфортной жизни с функциональной кухней и уютной гостиной.'},
+  {id:9,city:'Bodrum',district:'Тюркбюкю',title:'Семейная вилла с просторной террасой',type:'Вилла',deal:'sale',price:740000,bedrooms:4,bathrooms:3,area:220,img:photos.i,description:'Вилла с несколькими зонами для отдыха и просторной планировкой для большой семьи.'},
+  {id:10,city:'Istanbul',district:'Сарыер',title:'Апартаменты в зелёном районе',type:'Квартира',deal:'rent',price:2100,bedrooms:3,bathrooms:2,area:135,img:photos.j,description:'Комфортные апартаменты для тех, кто ценит пространство, свет и спокойный ритм города.'},
+  {id:11,city:'Antalya',district:'Коньяалты',title:'Стильная квартира с большой гостиной',type:'Квартира',deal:'sale',price:219000,bedrooms:2,bathrooms:1,area:105,img:photos.k,description:'Светлая квартира с лаконичным интерьером и удобным зонированием пространства.'},
+  {id:12,city:'Bodrum',district:'Битез',title:'Уютные апартаменты рядом с набережной',type:'Квартира',deal:'rent',price:1450,bedrooms:2,bathrooms:1,area:92,img:photos.l,description:'Апартаменты с приятной атмосферой и комфортным пространством для проживания.'}
+];
+
+/* Official ilçe lists for Istanbul / Antalya, mahalle list for Bodrum. */
+const districtsByCity = {"Istanbul": ["Adalar", "Arnavutköy", "Ataşehir", "Avcılar", "Bağcılar", "Bahçelievler", "Bakırköy", "Başakşehir", "Bayrampaşa", "Beşiktaş", "Beykoz", "Beylikdüzü", "Beyoğlu", "Büyükçekmece", "Çatalca", "Çekmeköy", "Esenler", "Esenyurt", "Eyüpsultan", "Fatih", "Gaziosmanpaşa", "Güngören", "Kadıköy", "Kağıthane", "Kartal", "Küçükçekmece", "Maltepe", "Pendik", "Sancaktepe", "Sarıyer", "Silivri", "Sultanbeyli", "Sultangazi", "Şile", "Şişli", "Tuzla", "Ümraniye", "Üsküdar", "Zeytinburnu"], "Antalya": ["Akseki", "Aksu", "Alanya", "Demre", "Döşemealtı", "Elmalı", "Finike", "Gazipaşa", "Gündoğmuş", "İbradı", "Kaş", "Kemer", "Kepez", "Konyaaltı", "Korkuteli", "Kumluca", "Manavgat", "Muratpaşa", "Serik"], "Bodrum": ["Akçaalan", "Akyarlar", "Bahçelievler", "Bahçeyaka", "Bitez", "Cevat Şakir", "Cumhuriyet", "Çamarası", "Çamlık", "Çarşı", "Çırkan", "Çiftlik", "Çömlekçi", "Dağbelen", "Dereköy", "Dirmil", "Eskiçeşme", "Farilya", "Geriş", "Gökpınar", "Gölbaşı", "Gölköy", "Gümbet", "Gümüşlük", "Gündoğan", "Gürece", "Güvercinlik", "İslamhaneleri", "Karabağ", "Karaova", "Kemer", "Kızılağaç", "Konacık", "Koyunbaba", "Kumbahçe", "Kumköy", "Küçükbük", "Mazıköy", "Mumcular", "Müskebi", "Peksimet", "Pınarlıbelen", "Sazköy", "Tepecik (Bodrum)", "Tepecik (Karaova)", "Torba", "Turgutreis", "Türkbükü", "Türkkuyusu", "Umurca", "Yahşi", "Yakaköy", "Yalıkavak", "Yeniköy", "Yeniköy (Karaova)", "Yokuşbaşı"]};
+const neighborhoodUIStrings={
+ ru:{label:'Квартал (mahalle)',choose:'Сначала выберите район',all:'Все кварталы',loading:'Загрузка кварталов…',failed:'Не удалось загрузить — укажите вручную',manual:'Указать квартал вручную',hint:'Введите название квартала'},
+ en:{label:'Neighborhood (mahalle)',choose:'Choose a district first',all:'All neighborhoods',loading:'Loading neighborhoods…',failed:'Could not load — enter manually',manual:'Enter neighborhood manually',hint:'Enter neighborhood name'},
+ tr:{label:'Mahalle',choose:'Önce ilçe seçin',all:'Tüm mahalleler',loading:'Mahalleler yükleniyor…',failed:'Yüklenemedi — elle girin',manual:'Mahalleyi elle gir',hint:'Mahalle adını girin'}
+};
+const neighborhoodCache = new Map();
+const neighborhoodCityNames={Istanbul:'İstanbul',Antalya:'Antalya',Bodrum:'Muğla'};
+let currentSearchAreaRequest=0,currentPostAreaRequest=0;
+function oneOption(select,value,label){const o=document.createElement('option');o.value=value;o.textContent=label;select.append(o);}
+function safeLabel(v){return v.normalize('NFC').toLocaleLowerCase('tr-TR');}
+async function loadAllNeighborhoods(city,district){
+ const key=city+'|'+district;
+ if(neighborhoodCache.has(key))return neighborhoodCache.get(key);
+ // The public TurkiyeAPI provides the complete administrative neighborhood dataset.
+ // Request a full 1000-row district window and fail explicitly rather than pretend it is complete.
+ const params=new URLSearchParams({province:neighborhoodCityNames[city],district:city==='Bodrum'?'Bodrum':district,limit:'1000',offset:'0'});
+ const controller=new AbortController(); const timeout=setTimeout(()=>controller.abort(),12000);
+ try{
+  const response=await fetch('https://api.turkiyeapi.dev/v1/neighborhoods?'+params.toString(),{signal:controller.signal});
+  if(!response.ok)throw Error('HTTP '+response.status);
+  const json=await response.json();
+  if(!Array.isArray(json.data))throw Error('Unexpected data');
+  const all=json.data.filter(x=>x&&typeof x.name==='string'&&safeLabel(x.district||'')===safeLabel(city==='Bodrum'?'Bodrum':district)&&safeLabel(x.province||'')===safeLabel(neighborhoodCityNames[city]));
+  if(!all.length||Number(json?.pagination?.total||json?.meta?.total||0)>1000)throw Error('Incomplete dataset');
+  const names=[...new Set(all.map(x=>x.name.trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'tr'));
+  neighborhoodCache.set(key,names);return names;
+ }finally{clearTimeout(timeout);}
+}
+async function refreshNeighborhoodSelect(post=false,oldValue){
+ const w=neighborhoodUIStrings[language],el=post?$('post-form').elements.neighborhood:$('neighborhood-select');
+ const manual=post?$('post-form').elements.neighborhoodOther:null;
+ const city=post?$('post-form').elements.city.value:$('city-select').value;
+ const district=post?$('post-form').elements.district.value:$('district-select').value;
+ const req=post?++currentPostAreaRequest:++currentSearchAreaRequest;
+ if(manual){manual.classList.add('hidden');manual.value='';}
+ el.replaceChildren();
+ const initialLabel=(!district||district==='all'||city==='all')?w.choose:w.loading;
+ oneOption(el,post?'':'all',initialLabel);
+ el.disabled=true;
+ // Bodrum already uses the official 56 mahalle in the main district selector.
+ el.closest('.neighborhood-field,.neighborhood-post')?.classList.toggle('hidden',city==='Bodrum');
+ if(!district||district==='all'||city==='all'||city==='Bodrum')return;
+ try{
+  const names=await loadAllNeighborhoods(city,district);
+  if(req!==(post?currentPostAreaRequest:currentSearchAreaRequest))return;
+  el.replaceChildren();oneOption(el,post?'':'all',post?w.choose:w.all);
+  names.forEach(n=>oneOption(el,n,n));
+  if(post)oneOption(el,'__manual__',w.manual);
+  el.disabled=false;el.value=names.includes(oldValue)?oldValue:(post?'':'all');
+ }catch(e){
+  if(req!==(post?currentPostAreaRequest:currentSearchAreaRequest))return;
+  el.replaceChildren();oneOption(el,post?'':'all',w.failed);
+  if(post){oneOption(el,'__manual__',w.manual);el.value='__manual__';el.disabled=false;manual.classList.remove('hidden');manual.placeholder=w.hint;}
+ }
+}
+function translateNeighborhoodControls(){
+ const w=neighborhoodUIStrings[language];$('neighborhood-search-label').textContent=w.label;$('post-neighborhood-label').textContent=w.label;
+}
+const sampleDistrictKeys = {
+ 'Бешикташ':'Beşiktaş','Кадыкёй':'Kadıköy','Нишанташи':'Şişli','Сарыер':'Sarıyer',
+ 'Коньяалты':'Konyaaltı','Лара':'Muratpaşa','Алтынташ':'Aksu',
+ 'Ялыкавак':'Yalıkavak','Гюмюшлюк':'Gümüşlük','Тюркбюкю':'Türkbükü','Битез':'Bitez'
+};
+const districtUIStrings={ru:{label:'Район / квартал',all:'Все районы',choose:'Выберите район',selectCity:'Сначала выберите город'},en:{label:'District / neighborhood',all:'All areas',choose:'Choose an area',selectCity:'Choose a city first'},tr:{label:'İlçe / mahalle',all:'Tüm bölgeler',choose:'Bölge seçin',selectCity:'Önce şehir seçin'}};
+function districtKeyFor(p){return p.userPosted?p.district:(sampleDistrictKeys[p.district]||p.district);}
+function fillDistrictSelect(select,city,value='all',post=false){
+ const strings=districtUIStrings[language],names=districtsByCity[city]||[];
+ select.replaceChildren();
+ const initial=document.createElement('option');initial.value=post?'':'all';initial.textContent=post?strings.choose:(city==='all'?strings.selectCity:strings.all);select.append(initial);
+ for(const name of names){const opt=document.createElement('option');opt.value=name;opt.textContent=name;select.append(opt);}
+ select.disabled=city==='all';
+ select.value=names.includes(value)?value:(post?'':'all');
+}
+function refreshDistrictControls(){
+ const label=$('district-search-label');label.textContent=districtUIStrings[language].label;translateNeighborhoodControls();
+ fillDistrictSelect($('district-select'),$('city-select').value,$('district-select').value);
+ fillDistrictSelect($('post-form').elements.district,$('post-form').elements.city.value,$('post-form').elements.district.value,true);
+ refreshNeighborhoodSelect(false,state.neighborhood);refreshNeighborhoodSelect(true,$('post-form').elements.neighborhood.value);
+}
+
+const cityRu = {Istanbul:'Стамбул',Antalya:'Анталья',Bodrum:'Бодрум'};
+const state = {deal:'rent',currency:'EUR',amenities:[],city:'all',district:'all',neighborhood:'all',type:'all',maxPrice:'',bedrooms:'all',sort:'featured',favoritesOnly:false};
+const $ = id => document.getElementById(id);
+const grid = $('properties-grid');
+// Только для демо: условные, не рыночные курсы.
+const demoRates = {EUR:1,USD:1.10,TRY:50};
+const money = n => new Intl.NumberFormat(languageLocales[language],{style:'currency',currency:state.currency,maximumFractionDigits:0}).format(Math.round(n*demoRates[state.currency]));
+const amenityNames = {wifi:'Wi-Fi',aircon:'Кондиционер',furnished:'С мебелью',washer:'Стиральная машина',parking:'Парковка',pets:'Можно с животными',balcony:'Балкон / терраса',pool:'Бассейн'};
+const rentalAmenities = {2:['wifi','aircon','furnished','washer','balcony'],4:['wifi','aircon','furnished','parking','washer'],6:['wifi','aircon','furnished','parking','pool','balcony','pets','washer'],8:['wifi','aircon','furnished','balcony','pets'],10:['wifi','parking','washer','furnished','balcony'],12:['wifi','aircon','furnished','washer','balcony','pool']};
+properties.forEach(p=>p.amenities=rentalAmenities[p.id]||[]);
+
+const staticTranslations = {"Аренда": {"en": "Rent", "tr": "Kiralık"}, "Покупка": {"en": "Buy", "tr": "Satılık"}, "О проекте": {"en": "About", "tr": "Hakkımızda"}, "Избранное": {"en": "Favorites", "tr": "Favoriler"}, "Связаться": {"en": "Contact", "tr": "İletişim"}, "ВАШ НОВЫЙ АДРЕС В ТУРЦИИ": {"en": "YOUR NEW ADDRESS IN TURKEY", "tr": "TÜRKİYE’DEKİ YENİ ADRESİNİZ"}, "Аренда или покупка.": {"en": "Rent or buy.", "tr": "Kirala veya satın al."}, "Всё просто.": {"en": "Made simple.", "tr": "Her şey çok kolay."}, "Выберите город, бюджет и необходимые удобства — найдём подходящие варианты в Стамбуле, Анталье и Бодруме.": {"en": "Choose a city, budget and amenities to find your ideal home in Istanbul, Antalya or Bodrum.", "tr": "İstanbul, Antalya veya Bodrum’da ideal evinizi bulmak için şehir, bütçe ve olanakları seçin."}, "Подбор жилья для вашей истории": {"en": "Find a place for your next chapter", "tr": "Yeni hikâyeniz için bir ev bulun"}, "Жить красиво — просто.": {"en": "Beautiful living, made easy.", "tr": "Güzel yaşamak çok kolay."}, "Где ищем?": {"en": "Destination", "tr": "Konum"}, "Все города": {"en": "All cities", "tr": "Tüm şehirler"}, "Стамбул": {"en": "Istanbul", "tr": "İstanbul"}, "Анталья": {"en": "Antalya", "tr": "Antalya"}, "Бодрум": {"en": "Bodrum", "tr": "Bodrum"}, "Тип жилья": {"en": "Property type", "tr": "Emlak türü"}, "Любой тип": {"en": "Any type", "tr": "Tüm türler"}, "Квартира": {"en": "Apartment", "tr": "Daire"}, "Вилла": {"en": "Villa", "tr": "Villa"}, "Пентхаус": {"en": "Penthouse", "tr": "Çatı katı"}, "Бюджет до": {"en": "Max budget", "tr": "Maks. bütçe"}, "Любой": {"en": "Any", "tr": "Herhangi"}, "Спальни": {"en": "Bedrooms", "tr": "Yatak odası"}, "Любое число": {"en": "Any number", "tr": "Fark etmez"}, "От 1": {"en": "1+", "tr": "1+"}, "От 2": {"en": "2+", "tr": "2+"}, "От 3": {"en": "3+", "tr": "3+"}, "От 4": {"en": "4+", "tr": "4+"}, "Найти жильё": {"en": "Search properties", "tr": "Ev ara"}, "Удобства для аренды": {"en": "Rental amenities", "tr": "Kiralık ev olanakları"}, "Отметьте, что важно для вас": {"en": "Select what matters to you", "tr": "Sizin için önemli olanları seçin"}, "Кондиционер": {"en": "Air conditioning", "tr": "Klima"}, "С мебелью": {"en": "Furnished", "tr": "Eşyalı"}, "Стиральная машина": {"en": "Washing machine", "tr": "Çamaşır makinesi"}, "Парковка": {"en": "Parking", "tr": "Otopark"}, "Можно с животными": {"en": "Pets allowed", "tr": "Evcil hayvan kabul edilir"}, "Балкон / терраса": {"en": "Balcony / terrace", "tr": "Balkon / teras"}, "Бассейн": {"en": "Pool", "tr": "Havuz"}, "Валюта и цены демонстрационные. Для переключения валют используются условные курсы: 1 € = 1,10 $ = 50 ₺. Это не актуальные рыночные курсы.": {"en": "Demo prices only. Currency conversions use illustrative rates: €1 = $1.10 = ₺50. Not live exchange rates.", "tr": "Fiyatlar yalnızca demodur. Para birimi dönüşümleri örnek kurlarla yapılır: 1 € = 1,10 $ = 50 ₺. Güncel döviz kurları değildir."}, "ОТКРОЙТЕ ДЛЯ СЕБЯ": {"en": "EXPLORE", "tr": "KEŞFEDİN"}, "Три города — ваш выбор.": {"en": "Three cities. Your choice.", "tr": "Üç şehir. Seçim sizin."}, "Выберите направление — мы покажем подходящие варианты.": {"en": "Choose a destination to discover properties.", "tr": "İlanları görmek için bir şehir seçin."}, "Город двух континентов": {"en": "City of two continents", "tr": "İki kıtanın şehri"}, "Солнце круглый год": {"en": "Sunshine all year", "tr": "Yıl boyu güneş"}, "Эгейская сказка": {"en": "Aegean dream", "tr": "Ege rüyası"}, "ПОДБОРКА ДЛЯ ВАС": {"en": "SELECTED FOR YOU", "tr": "SİZİN İÇİN SEÇTİK"}, "Подходящие объявления": {"en": "Explore properties", "tr": "Emlak ilanları"}, "Сбросить фильтры": {"en": "Reset filters", "tr": "Filtreleri sıfırla"}, "Все направления": {"en": "All destinations", "tr": "Tüm şehirler"}, "Сортировка": {"en": "Sort by", "tr": "Sıralama"}, "Рекомендуемые": {"en": "Featured", "tr": "Önerilen"}, "Сначала дешевле": {"en": "Price: low to high", "tr": "Fiyat: artan"}, "Сначала дороже": {"en": "Price: high to low", "tr": "Fiyat: azalan"}, "Большая площадь": {"en": "Largest area", "tr": "En büyük alan"}, "Демонстрационный каталог: все объекты и цены вымышлены и приведены для примера.": {"en": "Demo listings: all properties and prices are fictional examples.", "tr": "Demo ilanlar: tüm mülkler ve fiyatlar örnek amaçlıdır."}, "Таких объектов пока нет": {"en": "No matching properties", "tr": "Eşleşen ilan bulunamadı"}, "Попробуйте изменить город, бюджет или количество спален.": {"en": "Try changing the city, budget or bedroom count.", "tr": "Şehri, bütçeyi veya yatak odası sayısını değiştirmeyi deneyin."}, "Показать все объекты": {"en": "Show all properties", "tr": "Tüm ilanları göster"}, "Дом — это больше,": {"en": "A home is more", "tr": "Ev bir adresten"}, "чем просто адрес.": {"en": "than an address.", "tr": "çok daha fazlasıdır."}, "Мы создаём пространство, где искать недвижимость удобно и приятно. Узнавайте новые районы, сохраняйте любимые варианты и находите жильё в своём ритме.": {"en": "We make finding property simple and enjoyable. Explore neighborhoods, save your favorites and discover your next home at your own pace.", "tr": "Emlak aramayı kolay ve keyifli hâle getiriyoruz. Semtleri keşfedin, favorilerinizi kaydedin ve yeni evinizi kendi hızınızda bulun."}, "Смотреть объекты": {"en": "View properties", "tr": "İlanlara göz at"}, "Недвижимость в Турции — красиво и просто.": {"en": "Real estate in Turkey, beautifully simple.", "tr": "Türkiye’de emlak aramak artık çok kolay."}, "Объекты": {"en": "Properties", "tr": "İlanlar"}, "Контакты": {"en": "Contact", "tr": "İletişim"}, "Демо-проект.": {"en": "Demo project.", "tr": "Demo projesi."}, "Не является публичной офертой · Контакты и объекты — примеры.": {"en": "Not a binding offer · Contact details and listings are examples.", "tr": "Bağlayıcı teklif değildir · İletişim bilgileri ve ilanlar örnektir."}};
+const listingTranslations = {"en": [["Bright apartment overlooking the Bosphorus", "Modern apartment with a spacious living room and large windows. Convenient location near walking paths and city cafés."], ["Apartments within walking distance of the sea", "Comfortable apartments with bright finishes and an open layout. Ideal for extended stays."], ["Modern villa with a private pool", "Spacious villa with a terrace, multiple bedrooms and outdoor relaxation areas."], ["Designer apartment in the heart of the district", "Stylish apartment featuring natural materials, close to shops, restaurants and public transport."], ["Penthouse with a terrace and panoramic windows", "Penthouse with a large terrace, plenty of natural light and a comfortable layout."], ["Peaceful villa near the Aegean Sea", "A tranquil retreat with a separate lounge, open terrace and plenty of space for the family."], ["Premium apartment with high ceilings", "Urban residence with expressive interiors and a spacious dining area."], ["New apartment in a modern complex", "Compact apartment offering a practical kitchen and comfortable living room."], ["Family villa with a spacious terrace", "A villa with several relaxation areas and a comfortable layout for a larger family."], ["Apartments in a green neighborhood", "Comfortable apartments for those who value space, daylight and a calm lifestyle."], ["Stylish apartment with a large living room", "Bright apartment with a minimal interior and practical room layout."], ["Cozy apartments near the waterfront", "Comfortable apartments with a warm atmosphere and practical living spaces."]], "tr": [["Boğaz manzaralı aydınlık daire", "Geniş oturma odası ve büyük pencereleri olan modern daire. Yürüyüş yolları ve kafelere yakın konum."], ["Denize yürüme mesafesinde daire", "Aydınlık ve açık planlı, uzun süreli konaklamaya uygun rahat bir daire."], ["Özel havuzlu modern villa", "Terası, çok sayıda yatak odası ve açık hava dinlenme alanları olan geniş villa."], ["Semtin merkezinde tasarım daire", "Doğal malzemelerle dekore edilmiş, mağaza, restoran ve toplu taşımaya yakın şık daire."], ["Teraslı ve panoramik pencereli çatı katı", "Geniş teras, bol doğal ışık ve kullanışlı yerleşime sahip çatı katı."], ["Ege Denizi yakınında sakin villa", "Ayrı oturma alanı, açık teras ve aile için geniş yaşam alanı sunan huzurlu ev."], ["Yüksek tavanlı lüks daire", "Özenle tasarlanmış iç mekânı ve geniş yemek alanıyla şehir dairesi."], ["Modern sitede yeni daire", "İşlevsel mutfağı ve konforlu oturma odasıyla kullanışlı daire."], ["Geniş teraslı aile villası", "Kalabalık aileler için rahat planlı, farklı dinlenme alanlarına sahip villa."], ["Yeşil semtte ferah daire", "Alan, gün ışığı ve sakin yaşamı sevenler için konforlu daire."], ["Geniş salonlu şık daire", "Sade dekorasyonlu ve iyi planlanmış aydınlık daire."], ["Sahile yakın rahat daire", "Sıcak atmosferi ve kullanışlı yaşam alanlarıyla rahat daire."]]};
+const districtTranslations = {"en": {"Бешикташ": "Beşiktaş", "Коньяалты": "Konyaaltı", "Ялыкавак": "Yalıkavak", "Кадыкёй": "Kadıköy", "Лара": "Lara", "Гюмюшлюк": "Gümüşlük", "Нишанташи": "Nişantaşı", "Алтынташ": "Altıntaş", "Тюркбюкю": "Türkbükü", "Сарыер": "Sarıyer", "Битез": "Bitez"}, "tr": {"Бешикташ": "Beşiktaş", "Коньяалты": "Konyaaltı", "Ялыкавак": "Yalıkavak", "Кадыкёй": "Kadıköy", "Лара": "Lara", "Гюмюшлюк": "Gümüşlük", "Нишанташи": "Nişantaşı", "Алтынташ": "Altıntaş", "Тюркбюкю": "Türkbükü", "Сарыер": "Sarıyer", "Битез": "Bitez"}};
+let language = 'ru';
+const languageLocales = {ru:'ru-RU',en:'en-US',tr:'tr-TR'};
+const cityLocalized = {ru:{Istanbul:'Стамбул',Antalya:'Анталья',Bodrum:'Бодрум'},en:{Istanbul:'Istanbul',Antalya:'Antalya',Bodrum:'Bodrum'},tr:{Istanbul:'İstanbul',Antalya:'Antalya',Bodrum:'Bodrum'}};
+const dynamicWords = {
+ ru:{rent:'Аренда · месяц',sale:'Продажа',detail:'Подробнее',bed:'сп.',bath:'ван.',month:'мес.',bedFull:'спальни',bathFull:'ванные',favAdd:'Добавить в избранное',favRemove:'Убрать из избранного',favSaved:'Добавлено в избранное',favDeleted:'Удалено из избранного',favFailed:'Не удалось сохранить избранное в браузере',amenities:'Удобства в квартире',demo:'ДЕМО-ОБЪЕКТ',demoNote:'Все данные и изображения демонстрационные. Объект не размещён в реальной продаже или аренде.',contact:'Написать об объекте ↗',objects:'объектов',object:'объект',area:'м²',photo:'Иллюстративное фото',about:'Подробнее',mailIntro:'Здравствуйте! Меня интересует объект',mailDemo:'Это демонстрационный запрос.'},
+ en:{rent:'Rent · monthly',sale:'For sale',detail:'Details',bed:'beds',bath:'baths',month:'mo.',bedFull:'bedrooms',bathFull:'bathrooms',favAdd:'Add to favorites',favRemove:'Remove from favorites',favSaved:'Added to favorites',favDeleted:'Removed from favorites',favFailed:'Could not save favorites in this browser',amenities:'Property amenities',demo:'DEMO LISTING',demoNote:'All information and photos are illustrative. This property is not actually listed for rent or sale.',contact:'Contact about property ↗',objects:'properties',object:'property',area:'m²',photo:'Illustrative photo',about:'Details',mailIntro:'Hello! I am interested in property',mailDemo:'This is a demo inquiry.'},
+ tr:{rent:'Kiralık · aylık',sale:'Satılık',detail:'Detaylar',bed:'yatak',bath:'banyo',month:'ay',bedFull:'yatak odası',bathFull:'banyo',favAdd:'Favorilere ekle',favRemove:'Favorilerden çıkar',favSaved:'Favorilere eklendi',favDeleted:'Favorilerden çıkarıldı',favFailed:'Favoriler bu tarayıcıda kaydedilemedi',amenities:'Ev olanakları',demo:'DEMO İLAN',demoNote:'Tüm bilgiler ve fotoğraflar örnek amaçlıdır. Bu mülk gerçekte kiralık veya satılık değildir.',contact:'İlan hakkında iletişime geç ↗',objects:'ilan',object:'ilan',area:'m²',photo:'Örnek fotoğraf',about:'Detaylar',mailIntro:'Merhaba! Şu ilanla ilgileniyorum',mailDemo:'Bu bir demo talebidir.'}
+};
+const amenityTranslations = {en:{wifi:'Wi-Fi',aircon:'Air conditioning',furnished:'Furnished',washer:'Washing machine',parking:'Parking',pets:'Pets allowed',balcony:'Balcony / terrace',pool:'Pool'},tr:{wifi:'Wi-Fi',aircon:'Klima',furnished:'Eşyalı',washer:'Çamaşır makinesi',parking:'Otopark',pets:'Evcil hayvan kabul edilir',balcony:'Balkon / teras',pool:'Havuz'}};
+const originalStaticNodes = [];
+function initTranslationNodes(){
+ const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+ while(walker.nextNode()){
+  const node=walker.currentNode;const source=node.textContent.trim();
+  if(source&&staticTranslations[source]&&!node.parentElement.closest('#properties-grid,#modal-body,#toast'))originalStaticNodes.push({node,source});
+ }
+}
+function tr(key){return dynamicWords[language][key];}
+function translatedAmenity(a){return language==='ru'?amenityNames[a]:amenityTranslations[language][a];}
+function propertyText(p,field){return p.userPosted?escapeText(p[field]):(language==='ru'?p[field]:listingTranslations[language][p.id-1][field==='title'?0:1]);}
+function propertyDistrict(p){return p.userPosted?escapeText(p.district):(language==='ru'?p.district:districtTranslations[language][p.district]||p.district);}
+function propertyType(p){const options={ru:{'Квартира':'Квартира','Вилла':'Вилла','Пентхаус':'Пентхаус'},en:{'Квартира':'Apartment','Вилла':'Villa','Пентхаус':'Penthouse'},tr:{'Квартира':'Daire','Вилла':'Villa','Пентхаус':'Çatı katı'}};return options[language][p.type];}
+function setLanguage(next){
+ if(!languageLocales[next])return;
+ language=next;document.documentElement.lang=next;
+ document.title={ru:'Turkey Estate — недвижимость в Турции',en:'Turkey Estate — Properties in Turkey',tr:'Turkey Estate — Türkiye’de Emlak'}[next];
+ document.querySelector('meta[name="description"]').content={ru:'Демо недвижимости в Стамбуле, Анталье и Бодруме.',en:'Demo properties for rent and sale in Istanbul, Antalya and Bodrum.',tr:'İstanbul, Antalya ve Bodrum’da kiralık ve satılık demo emlak ilanları.'}[next];
+ originalStaticNodes.forEach(({node,source})=>{if(node.isConnected){const before=node.textContent;const leading=before.match(/^\s*/)[0],trailing=before.match(/\s*$/)[0];node.textContent=leading+(next==='ru'?source:staticTranslations[source][next])+trailing;}});
+ document.querySelectorAll('#amenity-options label').forEach(label=>{const input=label.querySelector('input');if(input)label.lastChild.textContent=' '+translatedAmenity(input.value);});
+ refreshDistrictControls();
+ $('max-price').placeholder={ru:'Любой',en:'Any',tr:'Fark etmez'}[language];
+ const labels={ru:['Показать избранное','Открыть меню','Выберите язык'],en:['Show favorites','Open menu','Choose language'],tr:['Favorileri göster','Menüyü aç','Dil seçimi']}[language];
+ $('favorites-header').setAttribute('aria-label',labels[0]);$('menu-toggle').setAttribute('aria-label',labels[1]);$('language-select').setAttribute('aria-label',labels[2]);
+ $('language-select').value=next;
+ try{localStorage.setItem('turkey-estate-language',next);}catch{}
+ render();if(typeof refreshPostUI==='function')refreshPostUI();
+ const modal=$('property-modal');if(!modal.classList.contains('hidden')){const id=Number(location.hash.replace('#property-',''));if(id)openProperty(id);}
+}
+
+const favKey = 'turkey-estate-favorites-v1';
+let favorites;
+try { const parsed = JSON.parse(localStorage.getItem(favKey)||'[]'); favorites = new Set(Array.isArray(parsed)?parsed.filter(Number.isInteger):[]); } catch { favorites = new Set(); }
+let toastTimeout;
+function notify(msg){ const el=$('toast'); el.textContent=msg;el.classList.add('visible');clearTimeout(toastTimeout);toastTimeout=setTimeout(()=>el.classList.remove('visible'),2600); }
+function syncFav(){ $('fav-count').textContent=favorites.size;$('fav-count').classList.toggle('hidden',!favorites.size);$('favorites-header').setAttribute('aria-pressed',String(state.favoritesOnly)); }
+function setFav(id){ if(favorites.has(id)) favorites.delete(id); else favorites.add(id); try{localStorage.setItem(favKey,JSON.stringify([...favorites]));}catch{notify(tr('favFailed'));}syncFav();render();notify(favorites.has(id)?tr('favSaved'):tr('favDeleted')); }
+function filtered(){
+  let list=properties.filter(p=>(state.deal==='all'||p.deal===state.deal)&&(state.city==='all'||p.city===state.city)&&(state.district==='all'||districtKeyFor(p)===state.district)&&(state.neighborhood==='all'||!p.userPosted||p.neighborhood===state.neighborhood)&&(state.type==='all'||p.type===state.type)&&(!state.maxPrice||p.price*demoRates[state.currency]<=Number(state.maxPrice))&&(state.bedrooms==='all'||p.bedrooms>=Number(state.bedrooms))&&(state.deal!=='rent'||state.amenities.every(a=>p.amenities.includes(a)))&&(!state.favoritesOnly||favorites.has(p.id)));
+  if(state.sort==='price-asc')list.sort((a,b)=>a.price-b.price);
+  if(state.sort==='price-desc')list.sort((a,b)=>b.price-a.price);
+  if(state.sort==='area-desc')list.sort((a,b)=>b.area-a.area);
+  return list;
+}
+function card(p){const title=propertyText(p,'title');return `<article class="property-card" data-id="${p.id}" role="button" tabindex="0" aria-label="${tr('detail')}: ${title}"><div class="property-image-wrap"><img src="${p.img}" alt="${tr('photo')}: ${title}" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/650x550/eeeae5/777777?text=Turkey+Estate'"/><span class="property-badge">${p.userPosted?postWords[language].mine:tr(p.deal)}</span><button type="button" class="heart-btn ${favorites.has(p.id)?'liked':''}" data-favorite="${p.id}" aria-label="${tr(favorites.has(p.id)?'favRemove':'favAdd')}" aria-pressed="${favorites.has(p.id)}"><svg class="icon"><use href="#i-heart"/></svg></button></div><div class="card-body"><p class="card-location"><svg class="icon"><use href="#i-pin"/></svg>${cityLocalized[language][p.city]}, ${propertyDistrict(p)}${p.neighborhood?', '+escapeText(p.neighborhood):''}</p><h3 class="card-title">${title}</h3><div class="card-features"><span><svg class="icon"><use href="#i-bed"/></svg>${p.bedrooms} ${tr('bed')}</span><span><svg class="icon"><use href="#i-bath"/></svg>${p.bathrooms} ${tr('bath')}</span><span><svg class="icon"><use href="#i-area"/></svg>${p.area} м²</span></div><div class="rental-perks">${p.deal==='rent'?p.amenities.slice(0,3).map(a=>`<span>${translatedAmenity(a)}</span>`).join(''):''}</div><div class="card-bottom"><span class="card-price">${money(p.price)}${p.deal==='rent'?`<small> / ${tr('month')}</small>`:''}</span><span class="card-link">${tr('detail')} <svg class="icon small"><use href="#i-arrow"/></svg></span></div></div></article>`;}
+function syncControls(){
+ document.querySelectorAll('[data-deal]').forEach(b=>b.classList.toggle('selected',b.dataset.deal===state.deal));
+ document.querySelectorAll('[data-chip]').forEach(b=>b.classList.toggle('active',b.dataset.chip===state.city));
+ document.querySelectorAll('[data-nav]').forEach(b=>b.classList.toggle('active',b.dataset.nav===state.deal&&!state.favoritesOnly));
+ $('city-select').value=state.city;fillDistrictSelect($('district-select'),state.city,state.district);$('type-select').value=state.type;$('rooms-select').value=state.bedrooms;$('max-price').value=state.maxPrice;$('currency-select').value=state.currency;$('sort-select').value=state.sort;$('amenities-panel').classList.toggle('hidden',state.deal!=='rent');document.querySelectorAll('#amenity-options input').forEach(cb=>cb.checked=state.amenities.includes(cb.value));
+ $('favorites-header').style.color=state.favoritesOnly?'#bf5942':'';
+}
+function render(){ const list=filtered();grid.innerHTML=list.map(card).join('');$('result-count').textContent=language==='ru'?`${list.length} ${list.length===1?'объект':list.length>1&&list.length<5?'объекта':'объектов'}`:`${list.length} ${tr('objects')}`;$('empty-state').classList.toggle('hidden',!!list.length);syncControls();syncFav(); }
+function reset(){Object.assign(state,{deal:'rent',currency:state.currency,amenities:[],city:'all',district:'all',neighborhood:'all',type:'all',maxPrice:'',bedrooms:'all',sort:'featured',favoritesOnly:false});render();}
+function openProperty(id){const p=properties.find(x=>x.id===id);if(!p)return;const modal=$('property-modal');const title=propertyText(p,'title');$('modal-body').innerHTML=`<img class="modal-photo" src="${p.img}" alt="${tr('photo')}" onerror="this.onerror=null;this.src='https://placehold.co/900x450/eeeae5/777777?text=Turkey+Estate'"/><div class="modal-content"><span class="modal-tag">${p.userPosted?postWords[language].mine:tr('demo')} · ${tr(p.deal)}</span><h2 id="modal-title">${title}</h2><p class="card-location"><svg class="icon"><use href="#i-pin"/></svg>${cityLocalized[language][p.city]}, ${propertyDistrict(p)}${p.neighborhood?', '+escapeText(p.neighborhood):''}</p><div class="modal-facts"><span><svg class="icon"><use href="#i-bed"/></svg>${p.bedrooms} ${tr('bedFull')}</span><span><svg class="icon"><use href="#i-bath"/></svg>${p.bathrooms} ${tr('bathFull')}</span><span><svg class="icon"><use href="#i-area"/></svg>${p.area} м²</span><span>${propertyType(p)}</span></div><p>${propertyText(p,'description')}</p>${p.deal==='rent'?`<div class="modal-amenities"><strong>${tr('amenities')}</strong><div>${p.amenities.map(a=>`<span>✓ ${translatedAmenity(a)}</span>`).join('')}</div></div>`:''}<p class="modal-disclaimer">${p.userPosted?postWords[language].onlyLocal:tr('demoNote')}</p><div class="modal-footer"><span class="modal-price">${money(p.price)} ${p.deal==='rent'?`<small>/ ${tr('month')}</small>`:''}</span><a class="modal-action" href="mailto:hello@example.com?subject=${encodeURIComponent('Turkey Estate demo inquiry: '+p.id)}&body=${encodeURIComponent(tr('mailIntro')+': '+title+'.\n'+tr('mailDemo'))}" >${tr('contact')}</a></div>${p.userPosted?`<button type="button" class="post-my" id="delete-post" data-id="${p.id}">${postWords[language].delete}</button>`:''}</div>`;
+modal.classList.remove('hidden');document.body.style.overflow='hidden';modal.querySelector('.modal-panel').focus();history.replaceState(null,'',`#property-${p.id}`);
+}
+function closeModal(){ $('property-modal').classList.add('hidden');document.body.style.overflow='';if(location.hash.startsWith('#property-'))history.replaceState(null,'','#catalog'); }
+grid.addEventListener('click',e=>{const fav=e.target.closest('[data-favorite]');if(fav){e.stopPropagation();setFav(Number(fav.dataset.favorite));return;}const c=e.target.closest('[data-id]');if(c)openProperty(Number(c.dataset.id));});
+grid.addEventListener('keydown',e=>{const c=e.target.closest('[data-id]');if(c&&(e.key==='Enter'||e.key===' ')){if(e.target.closest('button'))return;e.preventDefault();openProperty(Number(c.dataset.id));}});
+$('search-form').addEventListener('submit',e=>{e.preventDefault();state.city=$('city-select').value;state.district=$('district-select').value;state.neighborhood=$('neighborhood-select').value;state.type=$('type-select').value;state.maxPrice=$('max-price').value;state.bedrooms=$('rooms-select').value;state.amenities=[...document.querySelectorAll('#amenity-options input:checked')].map(cb=>cb.value);state.favoritesOnly=false;render();$('catalog').scrollIntoView({behavior:'smooth'});});
+document.querySelectorAll('[data-deal]').forEach(b=>b.addEventListener('click',()=>{state.deal=b.dataset.deal;state.amenities=[];state.maxPrice='';state.favoritesOnly=false;render();}));
+document.querySelectorAll('[data-chip]').forEach(b=>b.addEventListener('click',()=>{state.city=b.dataset.chip;state.district='all';state.neighborhood='all';state.favoritesOnly=false;render();}));
+document.querySelectorAll('[data-city]').forEach(b=>b.addEventListener('click',()=>{state.city=b.dataset.city;state.district='all';state.neighborhood='all';state.favoritesOnly=false;render();$('catalog').scrollIntoView({behavior:'smooth'});}));
+document.querySelectorAll('[data-nav]').forEach(b=>b.addEventListener('click',()=>{state.deal=b.dataset.nav==='all'?'rent':b.dataset.nav;state.amenities=[];state.maxPrice='';state.favoritesOnly=false;render();$('site-nav').classList.remove('open');$('menu-toggle').setAttribute('aria-expanded','false');}));
+$('city-select').addEventListener('change',e=>{fillDistrictSelect($('district-select'),e.target.value);refreshNeighborhoodSelect(false);});
+$('district-select').addEventListener('change',()=>refreshNeighborhoodSelect(false));
+$('currency-select').addEventListener('change',e=>{state.currency=e.target.value;state.maxPrice='';render();});
+document.querySelectorAll('#amenity-options input').forEach(cb=>cb.addEventListener('change',()=>{state.amenities=[...document.querySelectorAll('#amenity-options input:checked')].map(c=>c.value);state.favoritesOnly=false;render();}));
+$('sort-select').addEventListener('change',e=>{state.sort=e.target.value;render();});
+$('favorites-header').addEventListener('click',()=>{state.favoritesOnly=!state.favoritesOnly;render();$('catalog').scrollIntoView({behavior:'smooth'});});
+$('reset-btn').addEventListener('click',reset);$('empty-reset').addEventListener('click',reset);
+$('modal-close').addEventListener('click',closeModal);$('property-modal').addEventListener('click',e=>{if(e.target.dataset.closeModal)closeModal();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('property-modal').classList.contains('hidden'))closeModal();});
+$('menu-toggle').addEventListener('click',()=>{const expanded=$('menu-toggle').getAttribute('aria-expanded')==='true';$('menu-toggle').setAttribute('aria-expanded',String(!expanded));$('site-nav').classList.toggle('open',!expanded);});
+
+/* User-created listings: local browser draft storage only; no accounts or server. */
+const postWords={
+ ru:{button:'+ Разместить',kicker:'TURKEY ESTATE · ОБЪЯВЛЕНИЕ',title:'Разместить объявление',subtitle:'Заполните данные — объект появится в этом демо-каталоге.',deal:'Тип сделки',city:'Город',type:'Тип недвижимости',district:'Район / квартал',price:'Цена',currency:'Валюта',beds:'Спальни',baths:'Ванные',area:'Площадь, м²',photo:'Фото объекта (до 8 МБ)',description:'Описание',amenities:'Удобства для аренды',send:'Добавить в мой каталог',notice:'Демо: объявление хранится только в этом браузере, другие посетители его не увидят. Для реальной публикации понадобится база данных и авторизация.',mine:'МОЁ ОБЪЯВЛЕНИЕ',onlyLocal:'Локальная демо-публикация: доступна только в этом браузере.',delete:'Удалить моё объявление',saved:'Объявление добавлено!',deleted:'Объявление удалено',fileError:'Выберите JPG, PNG или WebP до 8 МБ',storeError:'Не удалось сохранить в браузере. Попробуйте изображение меньшего размера.',photoHint:'Выберите фото',close:'Закрыть',rent:'Аренда',sale:'Продажа',placeholderDistrict:'Например: Коньяалты',placeholderTitle:'Светлая квартира у моря',placeholderDescription:'Расскажите об объекте',deleteConfirm:'Удалить это объявление?'},
+ en:{button:'+ Post listing',kicker:'TURKEY ESTATE · LISTING',title:'Post your property',subtitle:'Enter the details to add your property to this demo catalog.',deal:'Listing type',city:'City',type:'Property type',district:'District / neighborhood',price:'Price',currency:'Currency',beds:'Bedrooms',baths:'Bathrooms',area:'Area, m²',photo:'Property photo (up to 8 MB)',description:'Description',amenities:'Rental amenities',send:'Add to my catalog',notice:'Demo: this listing stays only in this browser; other visitors cannot see it. Real publishing requires a database and authentication.',mine:'MY LISTING',onlyLocal:'Local demo listing: only available in this browser.',delete:'Delete my listing',saved:'Listing added!',deleted:'Listing deleted',fileError:'Choose JPG, PNG or WebP up to 8 MB',storeError:'Could not save in browser. Try a smaller photo.',photoHint:'Choose photo',close:'Close',rent:'Rent',sale:'Sale',placeholderDistrict:'Example: Konyaaltı',placeholderTitle:'Bright apartment near the sea',placeholderDescription:'Describe the property',deleteConfirm:'Delete this listing?'},
+ tr:{button:'+ İlan ver',kicker:'TURKEY ESTATE · İLAN',title:'İlan yayınla',subtitle:'Bilgileri girin; ilanınız bu demo kataloğunda görünsün.',deal:'İşlem türü',city:'Şehir',type:'Emlak türü',district:'İlçe / mahalle',price:'Fiyat',currency:'Para birimi',beds:'Yatak odası',baths:'Banyo',area:'Alan, m²',photo:'Fotoğraf (en fazla 8 MB)',description:'Açıklama',amenities:'Kiralık ev olanakları',send:'Kataloğuma ekle',notice:'Demo: ilan yalnızca bu tarayıcıda saklanır; diğer ziyaretçiler göremez. Gerçek yayın için veritabanı ve kimlik doğrulama gerekir.',mine:'BENİM İLANIM',onlyLocal:'Yerel demo ilanı: sadece bu tarayıcıda görünür.',delete:'İlanımı sil',saved:'İlan eklendi!',deleted:'İlan silindi',fileError:'En fazla 8 MB JPG, PNG veya WebP seçin',storeError:'Tarayıcıya kaydedilemedi. Daha küçük fotoğraf deneyin.',photoHint:'Fotoğraf seç',close:'Kapat',rent:'Kiralık',sale:'Satılık',placeholderDistrict:'Örn: Konyaaltı',placeholderTitle:'Denize yakın aydınlık daire',placeholderDescription:'Mülkü açıklayın',deleteConfirm:'Bu ilan silinsin mi?'}
+};
+const listingKey='turkey-estate-my-listings-v1';
+function escapeText(x){return String(x).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));}
+function refreshPostUI(){
+ const w=postWords[language];$('post-open').textContent=w.button;$('post-kicker').textContent=w.kicker;$('post-title').textContent=w.title;$('post-subtitle').textContent=w.subtitle;
+ for(const name of ['deal','city','type','district','price','currency','beds','baths','area','photo','description'])document.querySelector(`[data-post-label="${name}"]`).textContent=w[name];
+ $('post-amenities-heading').textContent=w.amenities;$('post-submit').textContent=w.send;$('post-notice').textContent=w.notice;$('post-close').setAttribute('aria-label',w.close);
+ const f=$('post-form');f.elements.deal.options[0].textContent=w.rent;f.elements.deal.options[1].textContent=w.sale;
+ for(const [i,k] of ['Istanbul','Antalya','Bodrum'].entries())f.elements.city.options[i].textContent=cityLocalized[language][k];
+ for(const [i,k] of ['Квартира','Вилла','Пентхаус'].entries())f.elements.type.options[i].textContent=({ru:['Квартира','Вилла','Пентхаус'],en:['Apartment','Villa','Penthouse'],tr:['Daire','Villa','Çatı katı']}[language])[i];
+ fillDistrictSelect(f.elements.district,f.elements.city.value,f.elements.district.value,true);f.elements.title.placeholder=w.placeholderTitle;f.elements.description.placeholder=w.placeholderDescription;
+ $('post-amenities').querySelectorAll('label').forEach(label=>{const cb=label.querySelector('input');label.lastChild.textContent=' '+translatedAmenity(cb.value);});
+}
+function initMyListings(){
+ try{const parsed=JSON.parse(localStorage.getItem(listingKey)||'[]');if(Array.isArray(parsed))for(const x of parsed){if(x&&x.userPosted&&Number.isInteger(x.id)&&x.id>=10000&&['rent','sale'].includes(x.deal)&&['Istanbul','Antalya','Bodrum'].includes(x.city)&&typeof x.title==='string'&&typeof x.img==='string'){properties.push({...x,amenities:Array.isArray(x.amenities)?x.amenities:[]});}}}catch{}
+}
+function hidePost(){ $('post-modal').classList.add('hidden');document.body.style.overflow=''; }
+function showPost(){closeModal();$('post-modal').classList.remove('hidden');document.body.style.overflow='hidden';refreshPostUI();$('post-modal').querySelector('.post-panel').focus();}
+$('post-open').addEventListener('click',showPost);
+$('post-close').addEventListener('click',hidePost);
+$('post-modal').addEventListener('click',e=>{if(e.target.dataset.closePost)hidePost();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('post-modal').classList.contains('hidden'))hidePost();});
+$('post-amenities').innerHTML=Object.keys(amenityNames).map(key=>`<label><input type="checkbox" value="${key}"><span> ${escapeText(amenityNames[key])}</span></label>`).join('');
+$('post-form').elements.city.addEventListener('change',e=>{fillDistrictSelect($('post-form').elements.district,e.target.value,'',true);refreshNeighborhoodSelect(true);});
+$('post-form').elements.district.addEventListener('change',()=>refreshNeighborhoodSelect(true));
+$('post-form').elements.neighborhood.addEventListener('change',e=>$('post-form').elements.neighborhoodOther.classList.toggle('hidden',e.target.value!=='__manual__'));
+$('post-form').elements.deal.addEventListener('change',e=>$('post-amenities').parentElement.classList.toggle('hidden',e.target.value!=='rent'));
+function compressPicture(file){return new Promise((resolve,reject)=>{if(!file){resolve('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=950&q=82');return;}const u=URL.createObjectURL(file);const img=new Image();img.onload=()=>{try{const scale=Math.min(1,850/img.width,680/img.height);const canvas=document.createElement('canvas');canvas.width=Math.max(1,Math.round(img.width*scale));canvas.height=Math.max(1,Math.round(img.height*scale));canvas.getContext('2d').drawImage(img,0,0,canvas.width,canvas.height);const value=canvas.toDataURL('image/jpeg',.71);URL.revokeObjectURL(u);resolve(value);}catch(err){URL.revokeObjectURL(u);reject(err);}};img.onerror=()=>{URL.revokeObjectURL(u);reject(new Error('image'));};img.src=u;});}
+$('post-photo').addEventListener('change',e=>{const f=e.target.files[0];const preview=$('post-preview');preview.classList.toggle('hidden',!f);if(!f)return;const u=URL.createObjectURL(f);preview.onload=()=>URL.revokeObjectURL(u);preview.src=u;});
+$('post-form').addEventListener('submit',async e=>{
+ e.preventDefault();const f=e.currentTarget;const file=f.elements.photo.files[0];const w=postWords[language];
+ if(file&&(!['image/jpeg','image/png','image/webp'].includes(file.type)||file.size>8*1024*1024)){notify(w.fileError);return;}
+ const id=Math.max(9999,...properties.map(p=>p.id))+1;
+ const sourceCurrency=f.elements.currency.value;
+ const priceInput=Number(f.elements.price.value);const priceEUR=priceInput/demoRates[sourceCurrency];
+ const listing={id,userPosted:true,city:f.elements.city.value,district:f.elements.district.value.trim(),neighborhood:(f.elements.neighborhood.value==='__manual__'?f.elements.neighborhoodOther.value:f.elements.neighborhood.value).trim(),title:f.elements.title.value.trim(),type:f.elements.type.value,deal:f.elements.deal.value,price:priceEUR,bedrooms:Number(f.elements.bedrooms.value),bathrooms:Number(f.elements.bathrooms.value),area:Number(f.elements.area.value),img:'',description:f.elements.description.value.trim(),amenities:f.elements.deal.value==='rent'?[...$('post-amenities').querySelectorAll('input:checked')].map(c=>c.value):[]};
+ if(!listing.title||!listing.district||(listing.city!=='Bodrum'&&!listing.neighborhood)||!listing.description||!Number.isFinite(priceEUR)||priceEUR<=0)return;
+ try{
+ listing.img=await compressPicture(file);
+ const saved=properties.filter(p=>p.userPosted).map(p=>({...p}));const next=[...saved,listing];localStorage.setItem(listingKey,JSON.stringify(next));
+ properties.push(listing);state.deal=listing.deal;state.city=listing.city;state.district=listing.district;state.neighborhood='all';state.amenities=[];state.type='all';state.maxPrice='';state.bedrooms='all';state.favoritesOnly=false;
+ f.reset();fillDistrictSelect(f.elements.district,f.elements.city.value,'',true);refreshNeighborhoodSelect(true);$('post-preview').classList.add('hidden');$('post-amenities').parentElement.classList.remove('hidden');hidePost();render();$('catalog').scrollIntoView({behavior:'smooth'});notify(w.saved);
+ }catch(err){notify(w.storeError);}
+});
+$('property-modal').addEventListener('click',e=>{const btn=e.target.closest('#delete-post');if(!btn)return;const id=Number(btn.dataset.id);const p=properties.find(x=>x.id===id);if(!p||!p.userPosted)return;if(!confirm(postWords[language].deleteConfirm))return;const index=properties.indexOf(p);try{localStorage.setItem(listingKey,JSON.stringify(properties.filter(x=>x.userPosted&&x.id!==id)));}catch{notify(postWords[language].storeError);return;}properties.splice(index,1);favorites.delete(id);closeModal();render();notify(postWords[language].deleted);});
+initMyListings();
+
+$('year').textContent=new Date().getFullYear();initTranslationNodes();let savedLang='ru';try{savedLang=localStorage.getItem('turkey-estate-language')||'ru';}catch{};setLanguage(languageLocales[savedLang]?savedLang:'ru');$('language-select').addEventListener('change',e=>setLanguage(e.target.value));
+if(/^#property-\d+$/.test(location.hash))openProperty(Number(location.hash.replace('#property-','')));
+
+</script>
+</body>
+</html>
